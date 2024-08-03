@@ -126,7 +126,7 @@
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
+              <a href="tel:1-562-867-5309"><i class="bi bi-telephone flex-shrink-0"></i></a>
               <div>
                 <h3>Call Us</h3>
                 <p>+1 5589 55488 55</p>
@@ -134,7 +134,7 @@
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
+              <a href='mailto:info@example.com'><i class="bi bi-envelope flex-shrink-0"></i></a>
               <div>
                 <h3>Email Us</h3>
                 <p>info@example.com</p>
@@ -257,10 +257,6 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
@@ -307,6 +303,8 @@
           success: function (response) {
 
             toastr.success('Thankyou for connecting with us.');
+
+            $("contactForm")[0].reset();
           },
           error: function (jqXHR, textStatus, errorThrown) {
             console.error(textStatus, errorThrown);
