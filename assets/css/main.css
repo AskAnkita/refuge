@@ -18,40 +18,40 @@
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #000000; /* Pure black background for the entire website */
-  --default-color: #FFD700; /* Gold color for the majority of the text content across the entire website */
-  --heading-color: #FFD700; /* Gold color for headings, subheadings, and titles throughout the website */
-  --accent-color: #DAA520; /* Dark goldenrod for buttons, links, and other elements that need to stand out */
-  --surface-color: #333333; /* Dark gray background for boxed elements within sections */
-  --contrast-color: #FFFFFF; /* White color for text, ensuring readability against darker backgrounds */
+  --background-color: #1F1B12; /* Background color for the entire website */
+  --default-color: #F0E3C2; /* Default color for the majority of the text content across the entire website */
+  --heading-color: #D6B984; /* Color for headings, subheadings, and titles */
+  --accent-color: #B89A5F; /* Accent color for buttons, links, and other standout elements */
+  --surface-color: #2A2A2A; /* Background for boxed elements within sections */
+  --contrast-color: #FFFFFF; /* White for text to ensure readability against darker backgrounds */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #FFD700;  /* Gold color for main navmenu links */
-  --nav-hover-color: #DAA520; /* Dark goldenrod color applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #000000; /* Black background for mobile navigation menu */
-  --nav-dropdown-background-color: #000000; /* Black background for dropdown items in the navigation menu */
-  --nav-dropdown-color: #FFD700; /* Gold color for dropdown navigation links */
-  --nav-dropdown-hover-color: #DAA520; /* Dark goldenrod color applied to dropdown navigation links when they are hovered over */
+  --nav-color: #F0E3C2;  /* Light gold color for main navmenu links */
+  --nav-hover-color: #D6B984; /* Light brown color for navmenu links when hovered over or active */
+  --nav-mobile-background-color: #1F1B12; /* Dark background for mobile navigation menu */
+  --nav-dropdown-background-color: #1F1B12; /* Dark background for dropdown items in the navigation menu */
+  --nav-dropdown-color: #F0E3C2; /* Light gold color for dropdown navigation links */
+  --nav-dropdown-hover-color: #D6B984; /* Light brown color for dropdown navigation links when hovered over */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the same color scheme */
 
 .light-background {
-  --background-color: #000000;
-  --surface-color: #333333;
+  --background-color: #484034;
+  --surface-color: #2A2A2A;
 }
 
 .dark-background {
-  --background-color: #000000;
-  --default-color: #FFD700;
-  --heading-color: #FFD700;
-  --surface-color: #333333;
+  --background-color: #1F1B12;
+  --default-color: #F0E3C2;
+  --heading-color: #D6B984;
+  --surface-color: #2A2A2A;
   --contrast-color: #FFFFFF;
 }
+
 
 
 /* Smooth scroll */
@@ -77,6 +77,11 @@ a {
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
+}
+
+#logo-img{
+  height: 100%;
+  width: 100%;
 }
 
 h1,
