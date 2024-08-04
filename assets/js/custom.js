@@ -43,7 +43,7 @@ function submitFeedback() {
 
             $('#feedback_email').val('');
             $('#feedback').val('');
-            $('.card').hide();
+            closeModal();
         },
         error: function (jqXHR, textStatus, errorThrown) {
             console.error(textStatus, errorThrown);

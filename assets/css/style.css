@@ -46,6 +46,10 @@ body {
   background-color: #dd4b39;
 }
 
+.social ul li.whatsapp:hover {
+  background-color: #00a703;
+}
+
 .social ul li a {
   color: white;
   text-decoration: none;
