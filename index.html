@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Favicons -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Fo3rlrQkz1yb3dCbwO2Pc8WYBJeE4zd+BrjY+8lDJ3MUp95uNZO6wA4ImbO7yIoKk6H4ojzp+X5rAHgC5X3V3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    integrity="sha384-1E1t3jAgStw1+3E6z9YxF/k12WWcGP02FRFlJ/0/qHQQUSC5kC+qXlf2CXZDJ94l" crossorigin="anonymous">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,8 +32,11 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
   <script src="assets/js/loadfooter.js"></script>
   <script src="assets/js/loadheader.js"></script>
+
+  <link href="assets/css/style.css" rel="stylesheet">
   
     <title>Home</title>
 </head>
@@ -48,6 +61,7 @@
               <ul>
                 <li><a href="#">support 1</a></li>
                 <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+
                   <ul>
                     <li><a href="#">Deep Dropdown 1</a></li>
                     <li><a href="#">Deep Dropdown 2</a></li>
@@ -66,7 +80,8 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
+        <a class="cta-btn d-none d-sm-block" id="feeback_btn" data-toggle="modal" onclick="openModal()">Add Feedback</a>
+
 
       </div>
 
@@ -74,63 +89,48 @@
 
   </header>
       <main class="main">
+
+
+    <!-- Social media buttons -->
+    <nav class="social">
+      <ul>
+        <li class="twitter"><a href="https://codepen.io/collection/XdWJOQ/">Twitter<i class="fa fa-twitter golden-icon"
+              aria-hidden="true"></i></a></li>
+        <li class="facebook"><a href="https://codepen.io/collection/XdWJOQ/">Facebook<i
+              class="fa fa-facebook golden-icon" aria-hidden="true"></i></a></li>
+        <li class="instagram"><a href="https://codepen.io/collection/XdWJOQ/">Instagram<i
+              class="fa fa-instagram golden-icon" aria-hidden="true"></i></a></li>
+        <li class="whatsapp"><a href="https://codepen.io/collection/XdWJOQ/">Whatsapp<i
+              class="fa fa-whatsapp golden-icon" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
-        <img src="assets/images/Picsart_24-08-03_14-28-28-256.jpg" alt="" data-aos="fade-in">
-  
-        <div class="container position-relative">
-  
-          <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-            <h2>WELCOME TO DV SURVIVORS</h2>
-            <p>I am Katie Ann a dedicated professional advisor specializing in supporting domestic violence survivors to reclaim their lives and find hope and healing.
-            </p>
-          </div><!-- End Welcome -->
-  
-          <div class="content row gy-4">
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-                <h3>About This site</h3>
-                <p>
-                  Domestic abuse can range from physical, sexual to emotional trauma, significantly impacting the rest of a person's life. While compensation cannot undo the lived experiences you have endured, it can be a step towards reclaiming control and empowering you to rebuild your life
-                </p>
-                <div class="text-center">
-                  <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
-                </div>
-              </div>
-            </div><!-- End Why Box -->
-  
-            <div class="col-lg-8 d-flex align-items-stretch">
-              <div class="d-flex flex-column justify-content-center">
-                <div class="row gy-4">
-  
-                  <div class="col-xl-4 d-flex align-items-stretch">
-                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
-                      <i class="bi bi-clipboard-data"></i>
-                      <h4>Corporis voluptates officia eiusmod</h4>
-                      <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                    </div>
-                  </div><!-- End Icon Box -->
-  
-                  <div class="col-xl-4 d-flex align-items-stretch">
-                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
-                      <i class="bi bi-gem"></i>
-                      <h4>Ullamco laboris ladore pan</h4>
-                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                    </div>
-                  </div><!-- End Icon Box -->
-  
-                  <div class="col-xl-4 d-flex align-items-stretch">
-                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                      <i class="bi bi-inboxes"></i>
-                      <h4>Labore consequatur incidid dolore</h4>
-                      <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                    </div>
-                  </div><!-- End Icon Box -->
-  
-                </div>
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container position-relative">
+
+        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+          <h2>WELCOME TO MEDILAB</h2>
+          <p>We are team of talented designers making websites with Bootstrap</p>
+        </div><!-- End Welcome -->
+
+        <div class="content row gy-4">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+              <h3>Why Choose Medilab?</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad
+                corporis.
+              </p>
+              <div class="text-center">
+                <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
               </div>
             </div>
+
           </div><!-- End  Content-->
   
         </div>
@@ -262,21 +262,132 @@
 
     <div id="footer_placeholder"></div>
 
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <footer id="footer" class="footer light-background">
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
-  
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-  
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Medilab</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+   <!-- Feedback Modal -->
+   <div class="card" id="card">
+    <div class="heading">
+      <h1>Give feedback</h1>
+      <p>What do you think of this ui design?</p>
+      <ul class="icon">
+        <li data-value="1" onclick="selectRating(this)"><i class="far fa-sad-tear fa-lg"></i></li>
+        <li data-value="2" onclick="selectRating(this)"><i class="far fa-frown fa-lg"></i></li>
+        <li data-value="3" onclick="selectRating(this)"><i class="far fa-meh fa-lg"></i></li>
+        <li data-value="4" onclick="selectRating(this)"><i class="far fa-smile fa-lg"></i></li>
+        <li data-value="5" onclick="selectRating(this)"><i class="far fa-grin-tears fa-lg"></i></li>
+      </ul>
+    </div>
+
+    <div class="textarea">
+      <label for="email">Email</label>
+      <input type="email" id="feedback_email" placeholder="email">
+    </div>
+
+    <div class="textarea">
+      <label for="textarea">Do you have any thoughts you'd like to share?</label>
+      <input type="textarea" id="feedback" placeholder="Type your words here..">
+    </div>
+
+    <div class="button">
+      <button onclick="submitFeedback()">Send</button>
+      <button class="cancel-btn">Cancel</butto>
+    </div>
+    <button onclick="closeModal()" class="close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
+
 </body>
+
 </html>

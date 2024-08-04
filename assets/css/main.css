@@ -228,6 +228,11 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+
+:root {
+  --accent-color: linear-gradient(90deg, #ffd700, #ffa500, #ffd700);
+}
+
 .header {
   color: var(--default-color);
   transition: all 0.5s;
@@ -236,11 +241,13 @@ h6 {
 }
 
 .header .topbar {
-  background-color: var(--accent-color);
+  background: var(--accent-color);
   height: 40px;
   padding: 0;
   font-size: 14px;
   transition: all 0.5s;
+  background-size: 200% 200%;
+  animation: shiny-background 3s linear infinite;
 }
 
 .header .topbar .contact-info i {
@@ -319,6 +326,7 @@ h6 {
 .header .cta-btn:focus:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  border: 2px solid goldenrod;
 }
 
 @media (max-width: 1200px) {
