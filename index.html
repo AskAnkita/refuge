@@ -33,6 +33,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
   <script id="footer-script" src="assets/js/loadfooter.js"></script>
   <script id="header-script" src="assets/js/loadheader.js"></script>
@@ -82,7 +83,7 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn d-none d-sm-block" id="feeback_btn" data-toggle="modal" onclick="openModal()">Add Feedback</a>
+        <button class="cta-btn d-none d-sm-block" id="feeback_btn" data-toggle="modal" onclick="openModal()">Add Feedback</button>
 
 
       </div>
@@ -93,19 +94,6 @@
   <main class="main">
 
 
-    <!-- Social media buttons -->
-    <nav class="social">
-      <ul>
-        <li class="twitter"><a href="https://codepen.io/collection/XdWJOQ/">Twitter<i class="bi bi-twitter golden-icon"
-              aria-hidden="true"></i></a></li>
-        <li class="facebook"><a href="https://codepen.io/collection/XdWJOQ/">Facebook<i
-              class="bi bi-facebook golden-icon" aria-hidden="true"></i></a></li>
-        <li class="instagram"><a href="https://codepen.io/collection/XdWJOQ/">Instagram<i
-              class="bi bi-instagram golden-icon" aria-hidden="true"></i></a></li>
-        <li class="whatsapp"><a onclick="whatsappMessageModel()">Whatsapp<i class="bi bi-whatsapp golden-icon"
-              aria-hidden="true"></i></a></li>
-      </ul>
-    </nav>
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
@@ -139,7 +127,7 @@
 
     </section><!-- /Hero Section -->
 
-    <section id="services" class="services section">
+    <section id="about" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -388,6 +376,7 @@
   </div>
 
 
+
     <!-- Whatsapp Message Modal -->
     <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
       <div class="modal-dialog">
@@ -406,13 +395,14 @@
                   </form>
               </div>
               <div class="modal-footer">
-                  <button type="button" class="modal-button-close" data-bs-dismiss="modal">Close</button>
                   <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
               </div>
           </div>
       </div>
   </div>
   
+  <button href="#" class="whatsapp-btn d-flex align-items-center justify-content-center" onclick="whatsappMessageModel()"><i
+    class="bi bi-whatsapp"></i></button>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>

@@ -1,3 +1,8 @@
+setTimeout(function(){   
+    whatsappMessageModel();
+},3000);
+
+
 var rating = 0;
 
 function openModal() {
@@ -8,8 +13,6 @@ function openModal() {
     const body = document.body;
 
     card.style.display = "flex";
-    // overlay.style.display = "block";
-    // body.classList.add("blur");
 };
 
 //close the box modal
@@ -64,4 +67,8 @@ function sendMessage() {
     var phoneNumber = '917354954816'; // Replace with the phone number you want to send the message to
     var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
     window.open(whatsappUrl, '_blank');
+}
+
+function closeWtsModal(){
+    $('.modal-backdrop').removeClass('show');
 }
