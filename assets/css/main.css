@@ -1896,16 +1896,16 @@ section,
   transition: all 1s;
 }
 
-.card .button button {
+/* .card .button button {
   width: 50%;
   height: 2.5rem;
   border: none;
   background-color: #385BB8;
-  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; 
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 .card .button .cancel-btn {
   border: solid 1px #fff;
@@ -1986,7 +1986,7 @@ circle {
 .card label,
 .card p {
   font-family: 'Poppins', sans-serif;
-  color: var(--surface-color);
+  color: var(--accent-color);
   font-size: .8rem;
 }
 
@@ -2027,7 +2027,7 @@ circle {
   position: fixed;
   height: fit-content;
   /* background: rgba(255, 255, 255, 0.2); */
-  background: var(--accent-color);
+  background: var(--background-color);
   border: solid 1px var(--default-color) ;
   border-radius: 5px;
   padding: 4rem 2rem 1rem 2rem;
@@ -2066,11 +2066,11 @@ circle {
 }
 
 
-.card .heading h1 {
+/* .card .heading h1 {
   text-align: left;
   color: var(--surface-color);
   font-size: 1rem;
-}
+} */
 
 input[type=textarea], input[type=email] {
   margin: 1em 0;

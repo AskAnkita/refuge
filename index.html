@@ -343,9 +343,9 @@
   </footer>
 
   <!-- Feedback Modal -->
-  <div class="card" id="card">
+  <div class="card light-background" id="card">
     <div class="heading">
-      <h1>Give feedback</h1>
+      <h1 class="modal-title">Give feedback</h1>
       <p>What do you think of this ui design?</p>
       <ul class="icon">
         <li data-value="1" onclick="selectRating(this)"><i class="far fa-sad-tear fa-lg"></i></li>
@@ -367,8 +367,8 @@
     </div>
 
     <div class="button">
-      <button onclick="submitFeedback()">Send</button>
-      <button class="cancel-btn">Cancel</butto>
+      <button class="cancel-btn modal-button-close">Cancel</butto>
+      <button class="modal-button" onclick="submitFeedback()">Send Feedback</button>
     </div>
     <button onclick="closeModal()" class="close">
       <i class="fas fa-times"></i>
