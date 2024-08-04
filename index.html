@@ -33,13 +33,14 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <script src="assets/js/loadfooter.js"></script>
-  <script src="assets/js/loadheader.js"></script>
+  <script id="footer-script" src="assets/js/loadfooter.js"></script>
+  <script id="header-script" src="assets/js/loadheader.js"></script>
 
   <link href="assets/css/style.css" rel="stylesheet">
-  
-    <title>Home</title>
+
+  <title>Home</title>
 </head>
+
 <body>
   <header id="header" class="header sticky-top">
     <div class="branding d-flex align-items-center">
@@ -57,10 +58,12 @@
             <li><a href="about_us.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="solicitor.html">Solicitor</a></li>
-            <li class="dropdown"><a href="#"><span>Area Of Support</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="#"><span>Area Of Support</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">support 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
 
                   <ul>
                     <li><a href="#">Deep Dropdown 1</a></li>
@@ -88,20 +91,20 @@
     </div>
 
   </header>
-      <main class="main">
+  <main class="main">
 
 
     <!-- Social media buttons -->
     <nav class="social">
       <ul>
-        <li class="twitter"><a href="https://codepen.io/collection/XdWJOQ/">Twitter<i class="fa fa-twitter golden-icon"
+        <li class="twitter"><a href="https://codepen.io/collection/XdWJOQ/">Twitter<i class="bi bi-twitter golden-icon"
               aria-hidden="true"></i></a></li>
         <li class="facebook"><a href="https://codepen.io/collection/XdWJOQ/">Facebook<i
-              class="fa fa-facebook golden-icon" aria-hidden="true"></i></a></li>
+              class="bi bi-facebook golden-icon" aria-hidden="true"></i></a></li>
         <li class="instagram"><a href="https://codepen.io/collection/XdWJOQ/">Instagram<i
-              class="fa fa-instagram golden-icon" aria-hidden="true"></i></a></li>
-        <li class="whatsapp"><a href="https://codepen.io/collection/XdWJOQ/">Whatsapp<i
-              class="fa fa-whatsapp golden-icon" aria-hidden="true"></i></a></li>
+              class="bi bi-instagram golden-icon" aria-hidden="true"></i></a></li>
+        <li class="whatsapp"><a onclick="whatsappMessageModel()">Whatsapp<i class="bi bi-whatsapp golden-icon"
+              aria-hidden="true"></i></a></li>
       </ul>
     </nav>
     <!-- Hero Section -->
@@ -132,38 +135,51 @@
             </div>
 
           </div><!-- End  Content-->
-  
-        </div>
-  
-      </section><!-- /Hero Section -->
-      <section id="services" class="services section">
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Domestic violence</h2>
-          <p>Domestic abuse, also called "domestic violence", can be defined as a pattern of behavior in any relationship that is used to gain or maintain power and control over an intimate partner. Abuse is physical, sexual, emotional, economic or psychological actions or threats of actions that influence another person. This includes any behaviors that frighten, intimidate, terrorize, manipulate, hurt, humiliate, blame, injure, or wound someone. Domestic abuse can happen to anyone of any race, age, sexual orientation, religion, or gender. It can occur within a range of relationships including couples who are married, living together or dating. Domestic violence affects people of all socioeconomic backgrounds and education levels. </p>
         </div>
-        <div class="container">
-  
-          <div class="row gy-4 gx-5">
-  
-            <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/about.jpg" class="img-fluid" alt="">
-            </div>
-  
-            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-              <h3>About me</h3>
-              <p>Globally, 27% of ever-partnered women aged 15–49 years are estimated to have experienced physical or sexual, or both, intimate partner violence in their lifetime, with 13% experiencing it in the past year before they were surveyed. This violence starts early, affecting adolescent girls and young women, with 24% of women aged 15–19 years and 26% of women aged 19–24 years having already experienced this violence at least once since the age of 15 years. Regional variations exist, with low-income countries reporting higher lifetime and, even more pronouncedly, higher past year prevalence compared with high-income countries.</p>
-                  <div>
-                    <h5>Are you seffering from domestic violence ?</h5>
-                    </div>
-            </div>
-            <br>
+
+    </section><!-- /Hero Section -->
+
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Domestic violence</h2>
+        <p>Domestic abuse, also called "domestic violence", can be defined as a pattern of behavior in any relationship
+          that is used to gain or maintain power and control over an intimate partner. Abuse is physical, sexual,
+          emotional, economic or psychological actions or threats of actions that influence another person. This
+          includes any behaviors that frighten, intimidate, terrorize, manipulate, hurt, humiliate, blame, injure, or
+          wound someone. Domestic abuse can happen to anyone of any race, age, sexual orientation, religion, or gender.
+          It can occur within a range of relationships including couples who are married, living together or dating.
+          Domestic violence affects people of all socioeconomic backgrounds and education levels. </p>
+      </div>
+      <div class="container">
+
+        <div class="row gy-4 gx-5">
+
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
-  
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>About me</h3>
+            <p>Globally, 27% of ever-partnered women aged 15–49 years are estimated to have experienced physical or
+              sexual, or both, intimate partner violence in their lifetime, with 13% experiencing it in the past year
+              before they were surveyed. This violence starts early, affecting adolescent girls and young women, with
+              24% of women aged 15–19 years and 26% of women aged 19–24 years having already experienced this violence
+              at least once since the age of 15 years. Regional variations exist, with low-income countries reporting
+              higher lifetime and, even more pronouncedly, higher past year prevalence compared with high-income
+              countries.</p>
+            <div>
+              <h5>Are you seffering from domestic violence ?</h5>
+            </div>
+          </div>
+          <br>
         </div>
-      </section>
-          <!-- Services Section -->
+
+      </div>
+    </section>
+    <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
@@ -184,7 +200,8 @@
               <a href="#" class="stretched-link">
                 <h3>Emotional Harm</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
+                tempore et consequatur.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -196,7 +213,8 @@
               <a href="#" class="stretched-link">
                 <h3>Sexual Abuse</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
+                nesciunt dolorem.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -209,7 +227,8 @@
               <a href="#" class="stretched-link">
                 <h3>Police Support</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
+                eos earum corrupti.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -222,7 +241,8 @@
               <a href="#" class="stretched-link">
                 <h3>Child and Adult Sexual Abuse</h3>
               </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
+                adipisci neque.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -235,7 +255,8 @@
               <a href="#" class="stretched-link">
                 <h3>Physical Harm</h3>
               </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem
+                alias eius labore.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -248,7 +269,8 @@
               <a href="#" class="stretched-link">
                 <h3>Abuse in Society</h3>
               </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti
+                recusandae ducimus enim.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -258,9 +280,9 @@
       </div>
 
     </section><!-- /Services Section -->
-    </main>
+  </main>
 
-    <div id="footer_placeholder"></div>
+  <div id="footer_placeholder"></div>
 
   <footer id="footer" class="footer light-background">
 
@@ -333,8 +355,8 @@
 
   </footer>
 
-   <!-- Feedback Modal -->
-   <div class="card" id="card">
+  <!-- Feedback Modal -->
+  <div class="card" id="card">
     <div class="heading">
       <h1>Give feedback</h1>
       <p>What do you think of this ui design?</p>
@@ -364,6 +386,32 @@
     <button onclick="closeModal()" class="close">
       <i class="fas fa-times"></i>
     </button>
+  </div>
+
+
+    <!-- Whatsapp Message Modal -->
+    <div class="modal" tabindex="-1" id="whatsappMessageModel">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                        <p>Please ensure you have WhatsApp installed on your device.</p>
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="sendMessage()">Send Message</button>
+              </div>
+          </div>
+      </div>
   </div>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

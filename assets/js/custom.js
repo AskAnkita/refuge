@@ -51,3 +51,17 @@ function submitFeedback() {
         }
     });
 }
+
+function whatsappMessageModel() {
+    var myModal = new bootstrap.Modal(document.getElementById('whatsappMessageModel'), {
+        keyboard: false
+    });
+    myModal.show();
+}
+
+function sendMessage() {
+    var message = document.getElementById('message-text').value;
+    var phoneNumber = '917354954816'; // Replace with the phone number you want to send the message to
+    var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+    window.open(whatsappUrl, '_blank');
+}

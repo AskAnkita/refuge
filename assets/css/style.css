@@ -21,13 +21,17 @@ body {
 
 .social ul li {
   display: block;
-  margin: 5px;
+  margin: 5px 5px 5px 25px;
   background-color: rgba(0, 0, 0, 0.5);
   width: 300px;
   text-align: right;
   padding: 10px;
   border-radius: 0 30px 30px 0;
   transition: all 1s;
+}
+
+.whatsapp {
+  cursor: pointer;
 }
 
 .social ul li:hover {
@@ -86,7 +90,6 @@ body {
 .golden-icon {
   position: relative;
   color: gold;
-  background: var(--accent-color);
   animation: shiny 2s infinite;
   font-size: 2rem;
   /* Adjust the size as needed */
