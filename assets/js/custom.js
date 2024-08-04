@@ -1,9 +1,19 @@
-setTimeout(function(){   
-    whatsappMessageModel();
-},3000);
-
-
 var rating = 0;
+
+
+// Get the current URL path
+const currentPath = window.location.pathname.split("/").pop();
+
+// Get all the navigation links
+const navLinks = document.querySelectorAll('.navmenu a');
+
+// Loop through each link and add 'active' class to the matching link
+navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+        link.classList.add('active');
+    }
+});
+
 
 function openModal() {
 
@@ -29,7 +39,7 @@ function selectRating(list) {
     $(list).addClass('active-feedback');
     $(list).find('i').addClass('icon-active');
     console.log(rating);
-    
+
 }
 
 function submitFeedback() {
@@ -39,7 +49,7 @@ function submitFeedback() {
     $.ajax({
         url: "backend/feedback.php",
         type: "POST",
-        data: {'rating':rating, 'email': email, 'feedback': feedback}, // Serialize the form data
+        data: { 'rating': rating, 'email': email, 'feedback': feedback }, // Serialize the form data
         success: function (response) {
 
             toastr.success('Thankyou for connecting with us.');
@@ -69,6 +79,6 @@ function sendMessage() {
     window.open(whatsappUrl, '_blank');
 }
 
-function closeWtsModal(){
+function closeWtsModal() {
     $('.modal-backdrop').removeClass('show');
 }

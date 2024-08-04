@@ -23,6 +23,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
   <script src="assets/js/loadfooter.js"></script>
   <script src="assets/js/loadheader.js"></script>
 </head>
@@ -39,20 +40,15 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" class="active">Home<br></a></li>
+            <li><a href="index.html">Home<br></a></li>
             <li><a href="about_us.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="solicitor.html">Solicitor</a></li>
             <li class="dropdown"><a href="area_of_support.html"><span>Area Of Support</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="area_of_support.html">Emotional Harm</a></li>
                 <li><a href="area_of_support.html">Physical Harm</a></li>
-                <li><a href="area_of_support.html">Sexual Harm</a></li>
-                <li><a href="area_of_support.html">Family Home Abuse</a></li>
-                <li><a href="area_of_support.html">Workplace Abuse</a></li>
-                <li><a href="area_of_support.html">Educational Institution Abuse</a></li>
-                <li><a href="area_of_support.html">Workplace Abuse</a></li>
-                <li><a href="area_of_support.html">Educational Institution Abuse</a></li>
+                <li><a href="area_of_support.html">Sexual Abuse</a></li>
+                <li><a href="area_of_support.html">Emotionam Harm</a></li>
                 <li><a href="area_of_support.html">Police Support</a></li>
               </ul>
             </li>
@@ -61,7 +57,8 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
+        <button class="cta-btn d-none d-sm-block" id="feeback_btn" data-toggle="modal" onclick="openModal()">Add Feedback</button>
+
 
       </div>
 
@@ -216,8 +213,129 @@
       </section><!-- /About Section -->
     </main>
 
-    <div id="footer_placeholder"></div>
+    <!-- <div id="footer_placeholder"></div> -->
+    <footer id="footer" class="footer light-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <!-- About Us Section -->
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">DV Survivors</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Your Adderess</p>
+              <p>xyz location</p>
+              <p class="mt-3"><strong>Telephone: </strong> <span>01223 607990</span></p>
+              <p class="mt-3"><strong>Whatsapp Business Number: </strong> <span>07923175219</span></p>
+              <p><strong>Email:</strong> <span>katie@dvsurvivors.co.uk</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href="#twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+    
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="area_of_support.html">Areas Of Support</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>Contact Us</h4>
+            <p>
+              National Domestic Abuse Helpline<br>
+              123 Support Lane<br>
+              City, State, ZIP Code<br>
+            </p>
+          </div>
+    
+          <!-- Social Media Links -->
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>Follow Us</h4>
+            <ul class="social-media">
+              <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container copyright text-center mt-4">
+        <p></p>
+      </div>
+    </footer>
 
+      <!-- Feedback Modal -->
+  <div class="card light-background" id="card">
+    <div class="heading">
+      <h1 class="modal-title">Give feedback</h1>
+      <p>What do you think of this ui design?</p>
+      <ul class="icon">
+        <li data-value="1" onclick="selectRating(this)"><i class="far fa-sad-tear fa-lg"></i></li>
+        <li data-value="2" onclick="selectRating(this)"><i class="far fa-frown fa-lg"></i></li>
+        <li data-value="3" onclick="selectRating(this)"><i class="far fa-meh fa-lg"></i></li>
+        <li data-value="4" onclick="selectRating(this)"><i class="far fa-smile fa-lg"></i></li>
+        <li data-value="5" onclick="selectRating(this)"><i class="far fa-grin-tears fa-lg"></i></li>
+      </ul>
+    </div>
+
+    <div class="textarea">
+      <label for="email">Email</label>
+      <input type="email" id="feedback_email" placeholder="email">
+    </div>
+
+    <div class="textarea">
+      <label for="textarea">Do you have any thoughts you'd like to share?</label>
+      <input type="textarea" id="feedback" placeholder="Type your words here..">
+    </div>
+
+    <div class="button">
+      <button class="cancel-btn modal-button-close">Cancel</butto>
+      <button class="modal-button" onclick="submitFeedback()">Send Feedback</button>
+    </div>
+    <button onclick="closeModal()" class="close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+    <!-- Whatsapp Message Modal -->
+    <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
+      <div class="modal-dialog">
+          <div class="modal-content light-background">
+              <div class="modal-header">
+                  <h5 class="modal-title">Send a WhatsApp Message</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <button href="#" class="whatsapp-btn d-flex align-items-center justify-content-center" onclick="whatsappMessageModel()"><i
+    class="bi bi-whatsapp"></i></button>
       
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -234,5 +352,6 @@
   
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>
