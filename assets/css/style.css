@@ -1,25 +1,32 @@
-
-
-
-/*--------------------------------------------------------------
-# Feed back 
---------------------------------------------------------------*/
-
-
-
-
-
-.heading,
-.textarea,
-.footer,
-.button {
-  margin-top: 1em;
+.whatsapp-btn {
+  position: fixed;
+  opacity: 1;
+  right: 15px;
+  bottom: 15px;
+  z-index: 999;
+  background-color: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
 }
 
+.whatsapp-btn i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
 
+.whatsapp-btn:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
 
-
-
-
+.modal-dialog{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+}
 
 

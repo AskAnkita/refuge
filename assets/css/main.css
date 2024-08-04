@@ -799,10 +799,10 @@ h6 {
   color: var(--contrast-color);
 }
 
-.scroll-top.active {
+/* .scroll-top.active {
   visibility: visible;
   opacity: 1;
-}
+} */
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -2024,7 +2024,7 @@ circle {
 
 
 .card {
-  position: absolute;
+  position: fixed;
   height: fit-content;
   /* background: rgba(255, 255, 255, 0.2); */
   background: var(--accent-color);
