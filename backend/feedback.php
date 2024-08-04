@@ -1,15 +1,15 @@
 <?php
 
 @include('connection.php');
+
 // Get form data
-$name = $_POST['name'];
+$rating = $_POST['rating'];
 $email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+$feedback = $_POST['feedback'];
 
 // Prepare and bind
-$stmt = $conn->prepare("INSERT INTO contacts (name, email, subject, message) VALUES (?, ?, ?, ?)");
-$stmt->bind_param("ssss", $name, $email, $subject, $message);
+$stmt = $conn->prepare("INSERT INTO feedbacks (rating, email, feedback) VALUES (?, ?, ?)");
+$stmt->bind_param("iss", $rating, $email, $feedback);
 
 // Execute the statement
 if ($stmt->execute()) {
@@ -17,8 +17,3 @@ if ($stmt->execute()) {
 } else {
     echo json_encode(["status" => "error", "message" => "Error: " . $stmt->error]);
 }
-
-// Close connections
-$stmt->close();
-$conn->close();
-?>
