@@ -7,7 +7,6 @@ CREATE TABLE contacts (
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
-
 -- ---------------- 
 
 CREATE TABLE feedbacks (
