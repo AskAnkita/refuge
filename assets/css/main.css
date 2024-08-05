@@ -2111,3 +2111,88 @@ input[type=radio] {
   justify-content: space-between;
   padding: 1rem 0;
 }
+
+
+
+/* # supporting Section */
+--------------------------------------------------------------*/
+
+
+.second{
+  border-radius: 20px;
+}
+
+.support{
+  background-color: var(--surface-color);
+}
+.p-support{
+  display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%; /* Ensure the div takes full height */
+      text-align: center; 
+
+}
+
+
+
+
+
+.second-card-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.second-card-col {
+  display: flex;
+}
+
+.second-card {
+  border-radius: 15px;
+  flex: 1; /* Ensures all cards take equal space */
+}
+
+.second-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  color: var(--background-color);
+}
+
+.second-card-text {
+  font-size: 16px;
+  margin: 20px;
+  color: var(--surface-color);
+}
+
+.second-btn {
+  font-size: 14px;
+  color: var(--nav-dropdown-background-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.second-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: var(--accent-color);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+}
+
+.second-btn-light {
+  align-self: flex-start;
+}
+
+.second-card.bg-dark {
+  background-color: #2e1534; /* Custom dark background color */
+}
+
+
+.your-rights{
+  background-color: var(--background-color);
+}
