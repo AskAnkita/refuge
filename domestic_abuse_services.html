@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+  <title>leave abuser</title>
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -16,7 +15,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -25,11 +25,12 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <script src="/assets/js/loadfooter.js"></script>
-
+  <script src="assets/js/loadfooter.js"></script>
+  <script src="assets/js/loadheader.js"></script>
 </head>
 
 <body>
@@ -49,7 +50,8 @@
             <li><a href="about_us.html">Bit about me</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="solicitor.html">Solicitor</a></li>
-            <li class="dropdown"><a href="area_of_support.html"><span>Area Of Support</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="area_of_support.html"><span>Area Of Support</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <!-- <li><a href="area_of_support.html">Physical Harm</a></li>
                 <li><a href="area_of_support.html">Sexual Abuse</a></li>
@@ -62,7 +64,8 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <button class="cta-btn d-none d-sm-block" id="feeback_btn" data-toggle="modal" onclick="openModal()">Add Feedback</button>
+        <button class="cta-btn d-none d-sm-block" id="feeback_btn" data-toggle="modal" onclick="openModal()">Add
+          Feedback</button>
 
 
       </div>
@@ -70,93 +73,57 @@
     </div>
 
   </header>
+
   <main class="main">
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section>
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact Us</h2>
-        <p>Need assistance? Contact us through our website today!</p>
-      </div><!-- End Section Title -->
-
-      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-        <iframe style="border:0; width: 100%; height: 270px;"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-          frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div><!-- End Google Maps -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Location</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <a href="tel:1-562-867-5309"><i class="bi bi-telephone flex-shrink-0"></i></a>
-              <div>
-                <h3>Whatsapp business number</h3>
-                <p>07923175219</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <a href='mailto:info@example.com'><i class="bi bi-envelope flex-shrink-0"></i></a>
-              <div>
-                <h3>Email Us</h3>
-                <p>katie@dvsurvivors.co.uk </p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-8">
-            <form id="contactForm" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required=""
-                    autocomplete="off">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required=""
-                    autocomplete="off">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required=""
-                    autocomplete="off">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
+        <h2>Domestic abuse services</h2>
       </div>
+      <div class="leave-absuer">
+        <div class="wid-700">
+            <h5>
+                Please note: the information on these pages is intended as a general guide only; each woman’s situation is different. Women should call us on 0808 2000 247 to discuss their rights and options in more detail.<br>
+            </h5>
+          <p>
+            Coping with domestic violence takes enormous strength and you deserve specialist support from women who understand. There are a range of services to support women experiencing domestic abuse and their children – regardless of whether a woman has left her partner or not. Below is information on the types of services available to women and children. Many of these services are oversubscribed and there may well be waiting lists depending on where you are located. But know that you are not alone, you can call the Helpline and we’ll help you find services in your area. Your local authority website is also a good place to start.
+          </p>
+          <p>Before you look for services online, consider whether your partner might be tracking how you use the internet. You can read about safer browsing here and use Refuge’s Tech Safety Website to learn how to keep your devices private.</p>
 
-    </section><!-- /Contact Section -->
+          <h3>Types of service</h3>
+          <ul>
+            <li>
+                <b>DVS (DV Shaviours) –</b> Provide emergency temporary accommodation for women and children fleeing abuse. They are safe and confidential. DVS give women time and space to make decisions about their future, and usually provide wrap-around support from specialist staff. DVS should try to adapt their accommodation to meet your needs. Some DVS have accessible rooms for wheelchair users. You can talk to the Helpline team about any adaptations you might need, and we can support you to find and appropriate refuge space. For women who are Deaf or Blind, or have sensory impairments, DVS may provide the devices you need such as specialised doorbells or alarms. Staff at DVS can also help you find replacements for assistive devices you had to leave behind or that were destroyed by the abuser.
+            </li><br>
+            <li>
+                <b>Outreach support –</b> Based in the community, outreach workers provide women with a range of practical and emotional support. They can usually meet you wherever is safest and more convenient for you.
+            </li><br>
+            <li>
+               <b>IDVAs –</b> Independent Domestic Violence Advocates provide expert guidance for women, particularly those going through the civil and criminal justice systems. If your case is referred to a ‘MARAC’, it will likely be an IDVA who supports you.
+
+            </li><br>
+            <li>
+                <b>Services for minoritised women –</b> Black and minoritised women may face additional barriers to accessing support, or have specific needs best met by women from within their community. You can find <a href="https://www.imkaan.org.uk/get-help">specialist service listings and more information on Imkaan’s website.</a>
+
+            </li><br>
+            <li>
+               <b>Drop-in services –</b> Many domestic abuse charities provide regular ‘drop-ins’ in the community, where you can talk to a specialist worker without making an appointment. There may also be other people present, such as lawyers or benefits advisers.
+            </li><br>
+            <li>
+                <b>Services for children –</b> Many domestic violence services have specific support for children – for example, child support workers, who can provide one-to-one and group sessions for children, to help them process their experiences.
+            </li>
+          </ul>
+
+          <h3>What is it like to go into a refuge?</h3>
+
+          <p>Leaving home and going somewhere new can be a scary – but refuges provide women with the time and safe space they need to begin to rebuild their lives. Refuges are usually run by charities. Some refuges have more support – such as specialist support on site – than others. Refuge runs more than 40 refuges across the country.</p>
+
+          <h3>How else can Refuge help me?</h3>
+
+          <p>Refuge is the largest provider of specialist domestic abuse services in the country. We provide all of the above services across various local authorities in England. Refuge all-female staff are highly trained, and can provide a range of emotional and practical support to help you and your children reach safety.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- <div id="footer_placeholder"></div> -->
@@ -182,7 +149,7 @@
             <a href="#linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-  
+
         <!-- Quick Links -->
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Quick Links</h4>
@@ -194,7 +161,7 @@
             <li><a href="privacy_policy.html">Privacy Policy</a></li>
           </ul>
         </div>
-  
+
         <!-- Contact Information -->
         <div class="col-lg-3 col-md-3 footer-links">
           <h4>Contact Us</h4>
@@ -204,7 +171,7 @@
             City, State, ZIP Code<br>
           </p>
         </div>
-  
+
         <!-- Social Media Links -->
         <div class="col-lg-3 col-md-3 footer-links">
           <h4>Follow Us</h4>
@@ -217,12 +184,11 @@
         </div>
       </div>
     </div>
-  
+
     <div class="container copyright text-center mt-4">
       <p></p>
     </div>
   </footer>
-  
 
   <!-- Feedback Modal -->
   <div class="card light-background" id="card">
@@ -250,49 +216,45 @@
 
     <div class="button">
       <button class="cancel-btn modal-button-close">Cancel</butto>
-      <button class="modal-button" onclick="submitFeedback()">Send Feedback</button>
+        <button class="modal-button" onclick="submitFeedback()">Send Feedback</button>
     </div>
     <button onclick="closeModal()" class="close">
       <i class="fas fa-times"></i>
     </button>
   </div>
 
-    <!-- Whatsapp Message Modal -->
-    <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
-      <div class="modal-dialog">
-          <div class="modal-content light-background">
-              <div class="modal-header">
-                  <h5 class="modal-title">Send a WhatsApp Message</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <form>
-                      <div class="form-group">
-                          <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
-                          <label for="message-text" class="col-form-label">Message:</label>
-                          <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
-                      </div>
-                  </form>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
-              </div>
-          </div>
+  <!-- Whatsapp Message Modal -->
+  <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
+    <div class="modal-dialog">
+      <div class="modal-content light-background">
+        <div class="modal-header">
+          <h5 class="modal-title">Send a WhatsApp Message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
+        </div>
       </div>
+    </div>
   </div>
-  
-  <button href="#" class="whatsapp-btn d-flex align-items-center justify-content-center" onclick="whatsappMessageModel()"><i
-    class="bi bi-whatsapp"></i></button>
 
-  <!-- Scroll Top -->
+  <button href="#" class="whatsapp-btn d-flex align-items-center justify-content-center"
+    onclick="whatsappMessageModel()"><i class="bi bi-whatsapp"></i></button>
+
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
-
-  <!-- Jquery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -302,37 +264,12 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#contactForm").submit(function (event) {
-
-        event.preventDefault(); // Prevent the default form submission
-
-        $.ajax({
-          url: "backend/contact.php",
-          type: "POST",
-          data: $(this).serialize(), // Serialize the form data
-          success: function (response) {
-
-            toastr.success('Thankyou for connecting with us.');
-
-            $("contactForm")[0].reset();
-          },
-          error: function (jqXHR, textStatus, errorThrown) {
-            console.error(textStatus, errorThrown);
-            toastr.error('There was an error submitting the form.');
-          }
-        });
-      });
-    });
-  </script>
 </body>
 
 </html>

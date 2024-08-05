@@ -107,3 +107,17 @@
 .support-card-grid h3{
   color: var(--background-color) !important;
 }
+
+.leave-absuer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.wid-700{
+  max-width: 700px;
+}
+
+.leave-absuer li{
+  text-align: start !important;
+}
