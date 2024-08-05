@@ -315,7 +315,7 @@ h6 {
 .header .cta-btn,
 .header .cta-btn:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
@@ -326,8 +326,8 @@ h6 {
 .header .cta-btn:hover,
 .header .cta-btn:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
-  border: 2px solid goldenrod;
+  /* background: color-mix(in srgb, var(--accent-color), transparent 15%); */
+  /* border: 2px solid goldenrod; */
 }
 
 @media (max-width: 1200px) {
@@ -975,7 +975,7 @@ section,
 
 .hero .content .why-box {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
   padding: 30px;
   border-radius: 4px;
 }
