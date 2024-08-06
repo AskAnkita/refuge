@@ -20,8 +20,8 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
     integrity="sha384-1E1t3jAgStw1+3E6z9YxF/k12WWcGP02FRFlJ/0/qHQQUSC5kC+qXlf2CXZDJ94l" crossorigin="anonymous">
-<!-- Toster -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+  <!-- Toster -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
 
 
   <!-- Vendor CSS Files -->
@@ -36,6 +36,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/about_us.css" rel="stylesheet">
 
   <script id="footer-script" src="assets/js/loadfooter.js"></script>
   <script id="header-script" src="assets/js/loadheader.js"></script>
@@ -57,24 +58,20 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="index.html">Home<br></a></li>
-            <li><a href="about_us.html">Bit about me</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="solicitor.html">Solicitor</a></li>
+            <li><a href="about_us.html">About Me</a></li>
             <li class="dropdown"><a href="area_of_support.html"><span>Area Of Support</span> <i
                   class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <!-- <li><a href="physical_harm.html">Abuse</a></li>
-                <li><a href="area_of_support.html">Sexual Abuse</a></li>
-                <li><a href="area_of_support.html">Emotionam Harm</a></li> -->
-               <li><a href="how_we_can_support_you.html">How we can support</a></li>
+                <li><a href="how_we_can_support_you.html">How we can support</a></li>
               </ul>
             </li>
-            <li><a href="privacy_policy.html">privacy policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal" onclick="openModal()">Add
+        <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal"
+          onclick="openModal()">Add
           Feedback</button>
 
 
@@ -86,78 +83,86 @@
   <main class="main">
 
 
-    <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
-
-      <!-- <img src="assets/images/Picsart_24-08-03_14-28-28-256.jpg" alt="" data-aos="fade-in"> -->
-
       <div class="container position-relative">
+        <div class="row d-flex align-items-center">
+          <div class="welcome col-lg-6 home-about-content" data-aos="fade-down" data-aos-delay="100">
+            <h2 class="gradient-text">Are you experiencing domestic abuse?</h2><br>
+            <h2 class="gradient-text">You are not alone</h2>
+          </div>
 
-        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2 class="gradient-text">Are you experiencing domestic abuse?</h2>
-          <h2 class="gradient-text">You are not alone</h2>
-        </div><!-- End Welcome -->
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img class="d-none d-sm-none d-md-block responsive-image" src="assets/images/hero-image.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="content row gy-4 justify-content-between">
-          <div class="col-lg-4 d-flex align-items-stretch bg-golden">
-            <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-              <h3>Why Choose Us?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad
-                corporis.
-              </p>
-              <div class="text-center">
-                <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+    <section class="emergency">
+
+      <div class="container emergency__text">
+
+        <p>If you are in an emergency, please call <a href="tel:999">999</a>.</p>
+
+        <p>If you’re worried someone might be monitoring your devices, exit this site and visit from a safe device.
+          Learn more about <a href="">keeping your technology safe here.</a></p>
+
+      </div>
+
+    </section>
+
+    <section class="hero-dup">
+      <div class="col-lg-10 d-flex align-items-stretch content">
+        <div class="d-flex flex-column justify-content-center">
+          <div class="row gy-4 block">
+            <div class="col-xl-3 col-lg-6 d-flex align-items-stretch fixed-height">
+              <div class="icon-box d-flex align-items-center justify-content-center text-center" data-aos="zoom-out"
+                data-aos-delay="300">
+                <h3>Do you change your behaviour for partner’s reaction?</h3>
               </div>
-            </div>
+            </div><!-- End Icon Box -->
 
-          </div><!-- End  Content-->
+            <div class="col-xl-3 col-lg-6 d-flex align-items-stretch fixed-height">
+              <div class="icon-box d-flex align-items-center justify-content-center text-center" data-aos="zoom-out"
+                data-aos-delay="400">
+                <h3>Is your partner jealous or possessive?</h3>
+              </div>
+            </div><!-- End Icon Box -->
 
-          <!-- <div class="col-lg-6 d-flex align-items-stretch">
-            <img class="d-none d-sm-none d-md-block responsive-image" src="assets\images\hero-image.webp" alt="">
-            <div class="d-none d-sm-none d-md-block responsive-image overlay"></div> -->
-            </div>
+            <div class="col-xl-3 col-lg-6 d-flex align-items-stretch fixed-height">
+              <div class="icon-box d-flex align-items-center justify-content-center text-center" data-aos="zoom-out"
+                data-aos-delay="500">
+                <h3>Do you feel like you’re walking on eggshells?</h3>
+              </div>
+            </div><!-- End Icon Box -->
 
-          </div><!-- End  Content-->
+            <div class="col-xl-3 col-lg-6 d-flex align-items-stretch fixed-height">
+              <div class="icon-box d-flex align-items-center justify-content-center text-center" data-aos="zoom-out"
+                data-aos-delay="500">
+                <h3>Do you feel controlled, or isolated?</h3>
+              </div>
+            </div><!-- End Icon Box -->
+          </div>
 
         </div>
-
-    </section><!-- /Hero Section -->
+      </div>
+    </section>
 
     <section id="about" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Domestic violence</h2>
-        <p>Domestic abuse, also called "domestic violence", can be defined as a pattern of behavior in any relationship
-          that is used to gain or maintain power and control over an intimate partner. Abuse is physical, sexual,
-          emotional, economic or psychological actions or threats of actions that influence another person. This
-          includes any behaviors that frighten, intimidate, terrorize, manipulate, hurt, humiliate, blame, injure, or
-          wound someone. Domestic abuse can happen to anyone of any race, age, sexual orientation, religion, or gender.
-          It can occur within a range of relationships including couples who are married, living together or dating.
-          Domestic violence affects people of all socioeconomic backgrounds and education levels. </p>
-      </div>
       <div class="container">
 
         <div class="row gy-4 gx-5">
 
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/images/domastic-voilance.jpg" class="img-fluid" alt="">
+            <img src="assets/images/about-us.jpg" class="img-fluid home-about-image" alt="">
           </div>
 
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>About me</h3>
-            <p>Globally, 27% of ever-partnered women aged 15–49 years are estimated to have experienced physical or
-              sexual, or both, intimate partner violence in their lifetime, with 13% experiencing it in the past year
-              before they were surveyed. This violence starts early, affecting adolescent girls and young women, with
-              24% of women aged 15–19 years and 26% of women aged 19–24 years having already experienced this violence
-              at least once since the age of 15 years. Regional variations exist, with low-income countries reporting
-              higher lifetime and, even more pronouncedly, higher past year prevalence compared with high-income
-              countries.</p>
-            <div>
-              <h5>Are you seffering from domestic violence ?</h5>
+          <div class="col-lg-6 content home-about-contant" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="gradient-text">How we can support you</h1>
+            <p class="gradient-text">find out more about how Refuge can help you.</p>
+            <div class="button">
+              <a href="how_we_can_support_you.html"><button class="modal-button bg-golden">Read more <i
+                    class="bi bi-arrow-right"></i></button></a>
             </div>
           </div>
           <br>
@@ -165,107 +170,144 @@
 
       </div>
     </section>
-    <!-- Services Section -->
-    <section id="services" class="services section">
 
-      <!-- Section Title -->
+    <section id="abuse" class="hero-dup">
+      <div class="col-lg-10">
+        <div class="content row gy-4">
+          <div class="col-12 col-md-4 mb-4 why-box-div">
+            <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
+              data-aos-delay="200">
+              <h3 class="text-black">What is domestic abuse</h3>
+              <p class="text-black">Domestic abuse can take many forms. Learn to spot the signs.</p>
+              <div class="text-center mt-auto">
+                <a href="physical_harm.html" class="more-btn"><span>Learn More</span> <i
+                    class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 why-box-div">
+            <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
+              data-aos-delay="200">
+              <h3 class="text-black">Your rights and options</h3>
+              <p class="text-black">Find out more about what support is available for you and your children.</p>
+              <div class="text-center mt-auto">
+                <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 why-box-div">
+            <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
+              data-aos-delay="200">
+              <h3 class="text-black">Supporting a survivor</h3>
+              <p class="text-black">If you’re worried about someone you care about, learn more about how you can support
+                them.</p>
+              <div class="text-center mt-auto">
+                <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="services" class="section keeping-safe">
+      <!-- <div class="container" data-aos="fade-up">
+        <h2></h2>
+      </div> -->
+
       <div class="container section-title" data-aos="fade-up">
-        <h2>I Can Help</h2>
-        <p>If you are suffering from violence then contact me.</p>
-      </div><!-- End Section Title -->
+        <h2>Keeping safe</h2>
+      </div>
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="fas fa-heartbeat"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Emotional Harm</h3>
-              </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-                tempore et consequatur.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
+      <div class="d-flex justify-content-center">
+        <div class="col-lg-10">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <!-- <div class="icon">
                 <i class="fas fa-pills"></i>
+              </div> -->
+                <a href="still_living_with_my_abuser.html" class="stretched-link">
+                  <h1>I am still living with my abuser</h1>
+                </a>
+                <a href="still_living_with_my_abuser.html">Read more</a>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Sexual Abuse</h3>
-              </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
-                nesciunt dolorem.</p>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-lock"></i>
-
+            <div class="col-lg-4 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <a href="planning_to_leave_my_abuser.html" class="stretched-link">
+                  <h1>I am planning to leave my abuser</h1>
+                </a>
+                <a href="planning_to_leave_my_abuser">Read more</a>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Police Support</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
-                eos earum corrupti.</p>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-child"></i>
-
+            <div class="col-lg-4 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <a href="have_already_left_my_abuser.html" class="stretched-link">
+                  <h1>I have already left my abuser</h1>
+                </a>
+                <a href="have_already_left_my_abuser.html">Read more</a>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Child and Adult Sexual Abuse</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
-                adipisci neque.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
+          </div>
+        </div>
+      </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-wheelchair"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Physical Harm</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem
-                alias eius labore.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+      
+    </section>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-notes-medical"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Abuse in Society</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti
-                recusandae ducimus enim.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+    <section>
 
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Ways of getting in touch</h2>
+      </div>
+
+      <div class="hero-dup">
+
+        <div class="col-lg-10 d-flex align-items-stretch content">
+          <div class="d-flex flex-column justify-content-center">
+            <div class="row gy-4 block">
+
+              <div class="col-xl-3 d-flex align-items-stretch container">
+                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="300">
+                  <h3>We are a team of highly-trained, female advisers</h3>
+                  <p>We won’t judge you or tell you what to do; we are here to listen.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-3 d-flex align-items-stretch container">
+                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="400">
+                  <h3>We will empower you</h3>
+                  <p>We will empower you to understand your options and support you to make any decisions about the
+                    future.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-3 d-flex align-items-stretch container">
+                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="500">
+                  <h3>We can support you to increase your safety</h3>
+                  <p>We can help you find a refuge place, or other specialist services.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-3 d-flex align-items-stretch container">
+                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="500">
+                  <h3>We can talk in confidence</h3>
+                  <p>We can talk in confidence, in many different languages, 24-hours a day, 365 days a year, for as
+                    long
+                    as you need.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
         </div>
 
       </div>
-
-    </section><!-- /Services Section -->
+    </section>
   </main>
 
   <!-- <div id="footer_placeholder"></div> -->
@@ -298,7 +340,7 @@
           <h4>Quick Links</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about_us.html">Bit about me</a></li>
+            <li><a href="about_us.html">About me</a></li>
             <li><a href="area_of_support.html">Areas Of Support</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="privacy_policy.html">Privacy Policy</a></li>
@@ -414,9 +456,9 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
-    setTimeout(function () {
-      whatsappMessageModel();
-    }, 3000);
+    // setTimeout(function () {
+    //   whatsappMessageModel();
+    // }, 3000);
   </script>
 
 </body>

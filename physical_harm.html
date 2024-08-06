@@ -20,8 +20,8 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
     integrity="sha384-1E1t3jAgStw1+3E6z9YxF/k12WWcGP02FRFlJ/0/qHQQUSC5kC+qXlf2CXZDJ94l" crossorigin="anonymous">
-<!-- Toster -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+  <!-- Toster -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
 
 
   <!-- Vendor CSS Files -->
@@ -58,19 +58,14 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="index.html">Home<br></a></li>
-            <li><a href="about_us.html">Bit about me</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="solicitor.html">Solicitor</a></li>
+            <li><a href="about_us.html">About Me</a></li>
             <li class="dropdown"><a href="area_of_support.html"><span>Area Of Support</span> <i
                   class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <!-- <li><a href="area_of_support.html">Physical Harm</a></li>
-                <li><a href="area_of_support.html">Sexual Abuse</a></li>
-                <li><a href="area_of_support.html">Emotionam Harm</a></li> -->
-               <li><a href="how_we_can_support_you.html">How we can support</a></li>
+                <li><a href="how_we_can_support_you.html">How we can support</a></li>
               </ul>
             </li>
-            <li><a href="privacy_policy.html">privacy policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -84,13 +79,14 @@
     </div>
 
   </header>
-  <main class="main">
-    <section>
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Physical abuse</h2>
-            <p>Domestic abuse is a pattern of behaviour on the part of the abuser designed to control his partner. It can happen at any point in a relationship, including after you have split up.</p>
-          </div>
-          <div class="container">
+  <main class="main" id="physical_abuse">
+    <section class="physical-sec">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Psychological abuse</h2>
+        <p>Domestic abuse is a pattern of behaviour on the part of the abuser designed to control his partner. It can
+          happen at any point in a relationship, including after you have split up.</p>
+      </div>
+      <!-- <div class="container">
     
             <div class="row gy-4 gx-5">
     
@@ -111,156 +107,217 @@
               <br>
             </div>
     
+          </div> -->
+    </section>
+    <section id="hero" class="hero section light-background">
+      <div class="container position-relative">
+        <div class="row d-flex align-items-center">
+          <div class="welcome col-lg-6 home-about-content" data-aos="fade-down" data-aos-delay="100">
+            <h2 class="gradient-text">What is abuse?</h2><br>
+            <h4 class="gradient-text">Domestic abuse is a pattern of behaviour on the part of the abuser designed to
+              control his partner. It can happen at any point in a relationship, including after you have split up.</h4>
           </div>
+
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img class="d-none d-sm-none d-md-block responsive-image" src="assets/images/hero-image.webp" alt="">
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="spotting">
-        <div class="d-flex justify-content-center">
-            <div>
-                <h2>Spotting the signs</h2><br>
-                <ul>
-                <li>Is your partner jealous and possessive?</li>
-                <li>Is he charming one minute and abusive the next?</li>
-                <li>Does he tell you what to wear, where to go, who to see?</li>
-                <li>Does he constantly put you down?</li>
-                <li>Does he play mind games and make you doubt your judgment?</li>
-                <li>Does he control your money, or make sure you are dependent on him for everyday things?</li>
-                <li>Does he pressure you to have sex when you don’t want to?</li>
-                <li>Are you starting to walk on eggshells to avoid making him angry?</li>
-                <li>Does he control your access to medicine, devices or care that you need?</li>
-                <li>Does he monitor or track your movements or messages?</li>
-                <li>Does he use anger and intimidation to frighten and control you?</li>
-                </ul>
-            </div>
+    <section class="emergency">
+
+      <div class="container emergency__text">
+
+        <p>If you are in an emergency, please call <a href="tel:999">999</a>.</p>
+
+        <p>If you’re worried someone might be monitoring your devices, exit this site and visit from a safe device.
+          Learn more about <a href="">keeping your technology safe here.</a></p>
+
+      </div>
+
+    </section>
+
+    <section class="physical-sec">
+      <div class="d-flex justify-content-center">
+        <div class="col-lg-6">
+          <h5>
+            Anyone forced to change their behaviour because they are frightened of their partner or ex-partner’s
+            reaction is experiencing abuse.<br></br>
+
+            Domestic abuse can happen to anyone, regardless of age, background, gender, religion, sexuality or
+            ethnicity. However, statistics show most domestic abuse is carried out by men and experienced by
+            women.<br></br>
+
+            Domestic abuse is never the fault of the person who is experiencing it.<br></br>
+
+            Domestic abuse is a crime.<br></br>
+          </h5>
+
+          <div>
+            <h2>Spotting the signs</h2><br>
+            <ul>
+              <li>Is your partner jealous and possessive?</li>
+              <li>Is he charming one minute and abusive the next?</li>
+              <li>Does he tell you what to wear, where to go, who to see?</li>
+              <li>Does he constantly put you down?</li>
+              <li>Does he play mind games and make you doubt your judgment?</li>
+              <li>Does he control your money, or make sure you are dependent on him for everyday things?</li>
+              <li>Does he pressure you to have sex when you don’t want to?</li>
+              <li>Are you starting to walk on eggshells to avoid making him angry?</li>
+              <li>Does he control your access to medicine, devices or care that you need?</li>
+              <li>Does he monitor or track your movements or messages?</li>
+              <li>Does he use anger and intimidation to frighten and control you?</li>
+            </ul>
           </div>
+        </div>
+      </div>
 
     </section>
     <section class="support-section spotting">
-        <!-- <div class="container section-title" data-aos="fade-up"> -->
-            <h2>Forms of domestic abuse</h2>
-            
-          <!-- </div> -->
-        <div class="container">
-            <div class="support-grid">
-                <div class="support-item">
-                    <i class="fas fa-heartbeat"></i>
-                    <h2>Psychological abuse</h2>
-                    <p>Includes name-calling, threats and manipulation, blaming you for the abuse or ‘gas-lighting’ you.</p>
-                </div>
-                <div class="support-item">
-                    <i class="fas fa-user-injured"></i>
-                    <h2>Economic abuse</h2>
-                    <p>Controlling your access to money or resources. He might take your wages, stop you working, or put you in debt.</p>
-                </div>
-                <div class="support-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <h2>Sexual abuse</h2>
-                    <p>Doesn’t have to be physical. He might manipulate or coerce you into doing things you don’t want to do.</p>
-                </div>
-                <div class="support-item">
-                    <i class="fas fa-hospital"></i>
-                    <h2>Coercive control</h2>
-                    <p>When an abuser uses a pattern of behaviour over time to exert power and control. It is a criminal offence.</p>
-                </div>
-                <div class="support-item">
-                    <i class="fas fa-building"></i>
-                    <h2>Physical abuse</h2>
-                    <p>Not only hitting. He might restrain you or throw objects. He might pinch or shove you and claim it’s a ‘joke’.</p>
-                </div>
-                <div class="support-item">
-                    <i class="fas fa-school"></i>
-                    <h2>Tech abuse</h2>
-                    <p>He might send abusive texts, demand access to your devices, track you with spyware, or share images of you online.</p>
-                </div>
-            </div>
-            
+      <div class="container section-title section-title-secondary" data-aos="fade-up">
+        <h2>Forms of domestic abuse</h2>
+
+      </div>
+      <div class="container">
+        <div class="support-grid">
+          <div class="support-item">
+            <i class="fas fa-heartbeat"></i>
+            <h2>Psychological abuse</h2>
+            <p>Includes name-calling, threats and manipulation, blaming you for the abuse or ‘gas-lighting’ you.</p>
+          </div>
+          <div class="support-item">
+            <i class="fas fa-user-injured"></i>
+            <h2>Economic abuse</h2>
+            <p>Controlling your access to money or resources. He might take your wages, stop you working, or put you in
+              debt.</p>
+          </div>
+          <div class="support-item">
+            <i class="fas fa-shield-alt"></i>
+            <h2>Sexual abuse</h2>
+            <p>Doesn’t have to be physical. He might manipulate or coerce you into doing things you don’t want to do.
+            </p>
+          </div>
+          <div class="support-item">
+            <i class="fas fa-hospital"></i>
+            <h2>Coercive control</h2>
+            <p>When an abuser uses a pattern of behaviour over time to exert power and control. It is a criminal
+              offence.</p>
+          </div>
+          <div class="support-item">
+            <i class="fas fa-building"></i>
+            <h2>Physical abuse</h2>
+            <p>Not only hitting. He might restrain you or throw objects. He might pinch or shove you and claim it’s a
+              ‘joke’.</p>
+          </div>
+          <div class="support-item">
+            <i class="fas fa-school"></i>
+            <h2>Tech abuse</h2>
+            <p>He might send abusive texts, demand access to your devices, track you with spyware, or share images of
+              you online.</p>
+          </div>
         </div>
+
+      </div>
     </section>
 
     <section class="d-flex justify-content-center">
-        <div class="will-change">
+      <div class="will-change">
 
-            <h2>Will he change?</h2><br>
-            <p>It is natural to hope that your partner will change, or that the abuse will stop. Often, an abusive partner will be very sorry after an incident of abuse. He may beg for forgiveness. If you have left him, he may become very charming and convince you to return. He may be on his best behaviour for weeks, or even months, before he becomes abusive again. <br></br>
-                The truth is that domestic abuse usually gets worse over time. There are perpetrator programmes for men who want to take responsibility for their abuse and change their behaviour for good. However, it is important that you prioritise your safety and wellbeing, and that of your children. </p>
-        </div>
+        <h2>Will he change?</h2><br>
+        <p>It is natural to hope that your partner will change, or that the abuse will stop. Often, an abusive partner
+          will be very sorry after an incident of abuse. He may beg for forgiveness. If you have left him, he may become
+          very charming and convince you to return. He may be on his best behaviour for weeks, or even months, before he
+          becomes abusive again. <br></br>
+          The truth is that domestic abuse usually gets worse over time. There are perpetrator programmes for men who
+          want to take responsibility for their abuse and change their behaviour for good. However, it is important that
+          you prioritise your safety and wellbeing, and that of your children. </p>
+      </div>
     </section>
 
     <section>
-        <div class="container">
-            <div class="row">
-                
-        
-                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-                    <h3>You are not alone</h3>
-                    <p>1 woman in 4 will experience domestic abuse over the course of her lifetime.<br></br>
+      <div class="container">
+        <div class="row">
 
-                        Every 30 seconds the police receive a call for help relating to domestic abuse.<br></br>
-                        
-                        Every day, our Helpline team speaks to more than 100 survivors and those supporting them .<br></br></p>
 
-                        <div class="contact-us">
-                            <p>If you have been affected by any of these issues, <a href="contact.html">please contact us</a> for confidential support and guidance.</p>
-                        </div>
-                </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>You are not alone</h3>
+            <p>1 woman in 4 will experience domestic abuse over the course of her lifetime.<br></br>
 
-                <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/images/not-alone.jpg" class="img-fluid" alt="">
-                </div>
-                
+              Every 30 seconds the police receive a call for help relating to domestic abuse.<br></br>
+
+              Every day, our Helpline team speaks to more than 100 survivors and those supporting them .<br></br></p>
+
+            <div class="contact-us">
+              <p>If you have been affected by any of these issues, <a href="contact.html">please contact us</a> for
+                confidential support and guidance.</p>
             </div>
+          </div>
+
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/images/not-alone.jpg" class="img-fluid home-about-image" alt="">
+          </div>
+
         </div>
+      </div>
     </section>
 
     <section class="support-section">
-        <!-- <div class="container section-title" data-aos="fade-up"> -->
-            <h2 class="d-flex justify-content-center">Myths and excuses</h2>
-            
-          <!-- </div> -->
-        <div class="container">
-            <div class="support-grid">
-                <div class="support-item">
-                    <h2>Myth 1: Alcohol, drugs and stress make men violent</h2>
-                    <p>Abusers are also violent when sober. Many men who drink never use violence. These are all excuses.</p>
-                </div>
-                <div class="support-item">
-                    <h2>Myth 2: She would leave if it was really bad</h2>
-                    <p>There are many overlapping reasons why women may stay. Leaving is difficult and takes time. It is a process.</p>
-                </div>
-                <div class="support-item">
-                    <h2>Myth 3: Abusers grow up in violent homes</h2>
-                    <p>Violence is a choice an abuser makes; he alone is responsible. It is unrelated to childhood.</p>
-                </div>
-                <div class="support-item">
-                    <h2>Myth 4: Domestic abuse only happens to certain women</h2>
-                    <p>Domestic abuse can happen to any women regardless of where they live, their profession, or social background.</p>
-                </div>
-                <div class="support-item">
-                    <h2>Myth 5: Some women deserve it</h2>
-                    <p>Men often claim their partner ‘makes them do it’. This is victim-blaming. The abuser alone is responsible.</p>
-                </div>
-                <div class="support-item">
-                    <h2>Myth 6: He just loses his temper sometimes</h2>
-                    <p>Abusers say they ‘see red’ sometimes – but they are very much in control, using multiple methods to abuse.</p>
-                </div>
-                <div class="support-item">
-                    <h2>Myth 7: Some women like violence</h2>
-                    <p>Women do not enjoy violence. Most live in fear and terror. This is victim-blaming.</p>
-                </div>
-                <div class="support-item">
-                    <h2>Myth 8: She's lucky to have him</h2>
-                    <p>Whether your abuser is also your caregiver, or presents himself as the perfect breadwinner, women often hear they are lucky to have someone ‘looking after them’. But you deserve to make choices about your own life.</p>
-                </div>
-                <div class="support-item">
-                    <h2>Myth 9: Domestic abuse is a private matter</h2>
-                    <p>Domestic abuse is a crime. It is not an individual but a social problem. We all need to speak out against it.</p>
-                </div>
-            </div>
-            
+      <div class="container section-title" data-aos="fade-up">
+        <h2 class="d-flex justify-content-center">Myths and excuses</h2>
+
+      </div>
+      <div class="container">
+        <div class="support-grid">
+          <div class="support-item">
+            <h2>Myth 1: Alcohol, drugs and stress make men violent</h2>
+            <p>Abusers are also violent when sober. Many men who drink never use violence. These are all excuses.</p>
+          </div>
+          <div class="support-item">
+            <h2>Myth 2: She would leave if it was really bad</h2>
+            <p>There are many overlapping reasons why women may stay. Leaving is difficult and takes time. It is a
+              process.</p>
+          </div>
+          <div class="support-item">
+            <h2>Myth 3: Abusers grow up in violent homes</h2>
+            <p>Violence is a choice an abuser makes; he alone is responsible. It is unrelated to childhood.</p>
+          </div>
+          <div class="support-item">
+            <h2>Myth 4: Domestic abuse only happens to certain women</h2>
+            <p>Domestic abuse can happen to any women regardless of where they live, their profession, or social
+              background.</p>
+          </div>
+          <div class="support-item">
+            <h2>Myth 5: Some women deserve it</h2>
+            <p>Men often claim their partner ‘makes them do it’. This is victim-blaming. The abuser alone is
+              responsible.</p>
+          </div>
+          <div class="support-item">
+            <h2>Myth 6: He just loses his temper sometimes</h2>
+            <p>Abusers say they ‘see red’ sometimes – but they are very much in control, using multiple methods to
+              abuse.</p>
+          </div>
+          <div class="support-item">
+            <h2>Myth 7: Some women like violence</h2>
+            <p>Women do not enjoy violence. Most live in fear and terror. This is victim-blaming.</p>
+          </div>
+          <div class="support-item">
+            <h2>Myth 8: She's lucky to have him</h2>
+            <p>Whether your abuser is also your caregiver, or presents himself as the perfect breadwinner, women often
+              hear they are lucky to have someone ‘looking after them’. But you deserve to make choices about your own
+              life.</p>
+          </div>
+          <div class="support-item">
+            <h2>Myth 9: Domestic abuse is a private matter</h2>
+            <p>Domestic abuse is a crime. It is not an individual but a social problem. We all need to speak out against
+              it.</p>
+          </div>
         </div>
+
+      </div>
     </section>
 
-   
+
   </main>
   <!-- <div id="footer_placeholder"></div> -->
 

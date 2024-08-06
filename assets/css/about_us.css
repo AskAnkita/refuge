@@ -25,7 +25,8 @@ body {
     display: block;
     width: 160px;
     height: 1px;
-    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     left: 0;
     right: 0;
     bottom: 1px;
@@ -38,7 +39,8 @@ body {
     display: block;
     width: 60px;
     height: 3px;
-    background: var(--accent-color);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     left: 0;
     right: 0;
     bottom: 0;
