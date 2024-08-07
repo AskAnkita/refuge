@@ -1479,6 +1479,7 @@ section,
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 75%);
   border-radius: 5px;
   overflow: hidden;
+  transition: background-color 0.3s, border-color 0.3s; /* Add transitions */
 }
 
 .faq .faq-container .faq-item:last-child {
@@ -1490,7 +1491,7 @@ section,
   font-size: 18px;
   line-height: 24px;
   margin: 0 30px 0 0;
-  transition: 0.3s;
+  transition: color 0.3s; /* Add transition */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1506,16 +1507,14 @@ section,
 }
 
 .faq .faq-container .faq-item .faq-content {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: 0.3s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
+  max-height: 0; /* Initial max-height */
+  overflow: hidden; /* Hide overflow */
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add transitions */
+  opacity: 0; /* Initially hidden */
 }
 
 .faq .faq-container .faq-item .faq-content p {
-  margin-bottom: 0;
-  overflow: hidden;
+  margin: 0; /* Adjust margin */
 }
 
 .faq .faq-container .faq-item .faq-toggle {
@@ -1524,7 +1523,7 @@ section,
   right: 20px;
   font-size: 16px;
   line-height: 0;
-  transition: 0.3s;
+  transition: transform 0.3s, color 0.3s; /* Add transitions */
   cursor: pointer;
 }
 
@@ -1533,7 +1532,8 @@ section,
 }
 
 .faq .faq-container .faq-active {
-  background-color: var(--accent-color);
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
   border-color: var(--accent-color);
   color: var(--contrast-color);
 }
@@ -1544,16 +1544,16 @@ section,
 }
 
 .faq .faq-container .faq-active .faq-content {
-  grid-template-rows: 1fr;
-  visibility: visible;
+  max-height: 1000px; /* Adjust based on your content */
   opacity: 1;
   padding-top: 10px;
 }
 
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: var(--accent-color);
+  color: var(--contrast-color); /* Adjust color for better visibility */
 }
+
 
 /*--------------------------------------------------------------
 # Testimonials Section
