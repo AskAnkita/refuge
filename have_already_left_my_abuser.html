@@ -29,6 +29,7 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/chat.css" rel="stylesheet">
     <script src="assets/js/loadfooter.js"></script>
     <script src="assets/js/loadheader.js"></script>
 </head>
@@ -36,8 +37,7 @@
 <body>
     <header id="header" class="header sticky-top">
         <div class="branding d-flex align-items-center">
-
-            <div class="container position-relative d-flex align-items-center justify-content-between">
+            <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
                 <a href="index.html" class="logo d-flex align-items-center me-auto">
                     <!-- Uncomment the line below if you also wish to use an image logo -->
                     <img src="assets/images/Picsart_24-08-03_14-28-28-256-removebg.png" alt="xyz">
@@ -46,23 +46,20 @@
 
                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li><a href="index.html">Home<br></a></li>
+                        <li><a href="physical_harm.html">What is abuse?</a></li>
+                        <li><a href="your_rights.html">Your rights and options</a></li>
+                        <li><a href="how_we_can_support_you.html">How we can support you</a></li>
                         <li><a href="about_us.html">About Me</a></li>
-                        <li class="dropdown"><a href="area_of_support.html"><span>Area Of Support</span> <i
-                                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                                <li><a href="how_we_can_support_you.html">How we can support</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="area_of_support.html">Area Of Support</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
-                <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal"
-                onclick="openModal()">Add
-                Feedback</button>
-            </div>
 
+                <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal"
+                    onclick="openModal()">Add
+                    Feedback</button>
+            </div>
         </div>
 
     </header>
@@ -76,9 +73,16 @@
             <div class="leave-absuer">
                 <div class="wid-700">
                     <p>
-                        Many women continue to experience abuse and harassment from their former partner long after they have left. Refuge is here for you. It doesn’t matter how long ago you left your abuser, you can call the National Domestic Abuse Helpline for confidential support, 24-hours a day, on 0808 2000 247. We won’t tell you what to do, but we can support you to understand your options and make a plan.<br></br>
+                        Many women continue to experience abuse and harassment from their former partner long after they
+                        have left. Refuge is here for you. It doesn’t matter how long ago you left your abuser, you can
+                        call the National Domestic Abuse Helpline for confidential support, 24-hours a day, on 0808 2000
+                        247. We won’t tell you what to do, but we can support you to understand your options and make a
+                        plan.<br></br>
 
-                        If you feel afraid, below are some tips for increasing your safety and the safety of your children. This page is a starting point. It is important to access specialist support as well. The Helpline can connect you with specialist services in your community. If needed, we can also help you find a refuge place. <b>In an emergency situation, call
+                        If you feel afraid, below are some tips for increasing your safety and the safety of your
+                        children. This page is a starting point. It is important to access specialist support as well.
+                        The Helpline can connect you with specialist services in your community. If needed, we can also
+                        help you find a refuge place. <b>In an emergency situation, call
                             999.</b><br></br>
 
                         <b>Tell someone:</b> Is there a friend, neighbour, or family member you trust? Let them know you
@@ -86,7 +90,10 @@
                         ringing and hanging up, or a blank text), that lets them know you need help. You could also
                         think about telling a professional you trust for example your GP.<br></br>
 
-                        <b>Explore civil orders:</b> These are civil orders that stop an abusive person harassing you. For example, a non-molestation order will tell your perpetrator not to contact you. You don’t need to involve the police to get one, but if your perpetrator breaks one, it becomes a criminal offence. You can find out more about your legal options here.
+                        <b>Explore civil orders:</b> These are civil orders that stop an abusive person harassing you.
+                        For example, a non-molestation order will tell your perpetrator not to contact you. You don’t
+                        need to involve the police to get one, but if your perpetrator breaks one, it becomes a criminal
+                        offence. You can find out more about your legal options here.
 
                         <b>Get specialist support:</b> There are likely to be local charities in your area that can
                         provide ongoing support, without your partner finding out. Many have ‘drop ins’, where you can
@@ -128,7 +135,7 @@
                     <ul>
                         <li> Plan an escape route – think about where you will go so you can call the police or alert a
                             neighbour, and
-                       plan a place to meet with your children if you get separated.</li>
+                            plan a place to meet with your children if you get separated.</li>
                         <li> Move to lower-risk parts of your home, where there is an escape route or access to a phone
                         </li>
                         <li> Avoid rooms like the kitchen or garage, which contain objects that could be used to hurt
@@ -266,8 +273,9 @@
         </div>
     </div>
 
-    <button href="#" class="whatsapp-btn d-flex align-items-center justify-content-center"
-        onclick="whatsappMessageModel()"><i class="bi bi-whatsapp"></i></button>
+    <button onclick="whatsappMessageModel()" class="chat_button ">
+        <i id="chatOpen" class="bi bi-whatsapp white"></i>
+    </button>
 
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>

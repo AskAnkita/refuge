@@ -35,6 +35,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/about_us.css" rel="stylesheet">
+  <link href="assets/css/chat.css" rel="stylesheet">
 
   <script id="footer-script" src="assets/js/loadfooter.js"></script>
   <script id="header-script" src="assets/js/loadheader.js"></script>
@@ -45,8 +46,7 @@
 <body>
   <header id="header" class="header sticky-top">
     <div class="branding d-flex align-items-center">
-
-      <div class="container position-relative d-flex align-items-center justify-content-between">
+      <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <img src="assets/images/Picsart_24-08-03_14-28-28-256-removebg.png" alt="xyz">
@@ -55,24 +55,22 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home<br></a></li>
+            <li><a href="physical_harm.html">What is abuse?</a></li>
+            <li><a href="your_rights.html">Your rights and options</a></li>
+            <li><a href="how_we_can_support_you.html">How we can support you</a></li>
             <li><a href="about_us.html">About Me</a></li>
-            <li class="dropdown"><a href="area_of_support.html"><span>Area Of Support</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="how_we_can_support_you.html">How we can support</a></li>
-              </ul>
-            </li>
+            <li><a href="area_of_support.html">Area Of Support</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
         <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal"
-        onclick="openModal()">Add
-        Feedback</button>
-      </div>
+          onclick="openModal()">Add
+          Feedback</button>
 
+
+      </div>
     </div>
 
   </header>
@@ -438,8 +436,9 @@
     </div>
   </div>
 
-  <button href="#" class="whatsapp-btn d-flex align-items-center justify-content-center"
-    onclick="whatsappMessageModel()"><i class="bi bi-whatsapp"></i></button>
+  <button onclick="whatsappMessageModel()" class="chat_button ">
+    <i id="chatOpen" class="bi bi-whatsapp white"></i>
+  </button>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>

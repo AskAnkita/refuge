@@ -58,9 +58,9 @@
 
 .modal-dialog {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 300px;
+  right: 58px;
+  bottom: 40px;
+  width: 335px;
 }
 
 

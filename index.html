@@ -37,6 +37,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/about_us.css" rel="stylesheet">
+  <link href="assets/css/chat.css" rel="stylesheet">
 
   <script id="footer-script" src="assets/js/loadfooter.js"></script>
   <script id="header-script" src="assets/js/loadheader.js"></script>
@@ -47,8 +48,7 @@
 <body>
   <header id="header" class="header sticky-top">
     <div class="branding d-flex align-items-center">
-
-      <div class="container position-relative d-flex align-items-center justify-content-between">
+      <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <img src="assets/images/Picsart_24-08-03_14-28-28-256-removebg.png" alt="xyz">
@@ -57,14 +57,11 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home<br></a></li>
+            <li><a href="physical_harm.html">What is abuse?</a></li>
+            <li><a href="your_rights.html">Your rights and options</a></li>
+            <li><a href="how_we_can_support_you.html">How we can support you</a></li>
             <li><a href="about_us.html">About Me</a></li>
-            <li class="dropdown"><a href="area_of_support.html"><span>Area Of Support</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="how_we_can_support_you.html">How we can support</a></li>
-              </ul>
-            </li>
+            <li><a href="area_of_support.html">Area Of Support</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -76,9 +73,7 @@
 
 
       </div>
-
     </div>
-
   </header>
   <main class="main">
 
@@ -175,36 +170,45 @@
       <div class="col-lg-10">
         <div class="content row gy-4">
           <div class="col-12 col-md-4 mb-4 why-box-div">
-            <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
-              data-aos-delay="200">
-              <h3 class="text-black">What is domestic abuse</h3>
-              <p class="text-black">Domestic abuse can take many forms. Learn to spot the signs.</p>
-              <div class="text-center mt-auto">
-                <a href="physical_harm.html" class="more-btn"><span>Learn More</span> <i
-                    class="bi bi-chevron-right"></i></a>
+            <a href="physical_harm.html">
+              <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
+                data-aos-delay="200">
+                <h3 class="text-black">What is domestic abuse?</h3>
+                <p class="text-black">Domestic abuse can take many forms. Learn to spot the signs.</p>
+                <div class="text-center mt-auto">
+                  <a href="physical_harm.html" class="more-btn"><span>Learn More</span> <i
+                      class="bi bi-chevron-right"></i></a>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-12 col-md-4 mb-4 why-box-div">
-            <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
-              data-aos-delay="200">
-              <h3 class="text-black">Your rights and options</h3>
-              <p class="text-black">Find out more about what support is available for you and your children.</p>
-              <div class="text-center mt-auto">
-                <a href="your_rights.html" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+            <a href="your_rights.html">
+              <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
+                data-aos-delay="200">
+                <h3 class="text-black">Your rights and options</h3>
+                <p class="text-black">Find out more about what support is available for you and your children.</p>
+                <div class="text-center mt-auto">
+                  <a href="your_rights.html" class="more-btn"><span>Learn More</span> <i
+                      class="bi bi-chevron-right"></i></a>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-12 col-md-4 mb-4 why-box-div">
-            <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
-              data-aos-delay="200">
-              <h3 class="text-black">Supporting a survivor</h3>
-              <p class="text-black">If you’re worried about someone you care about, learn more about how you can support
-                them.</p>
-              <div class="text-center mt-auto">
-                <a href="supporting_a_survivour.html" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+            <a href="supporting_a_survivour.html">
+              <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
+                data-aos-delay="200">
+                <h3 class="text-black">Supporting a survivor</h3>
+                <p class="text-black">If you’re worried about someone you care about, learn more about how you can
+                  support
+                  them.</p>
+                <div class="text-center mt-auto">
+                  <a href="supporting_a_survivour.html" class="more-btn"><span>Learn More</span> <i
+                      class="bi bi-chevron-right"></i></a>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -264,18 +268,13 @@
           </div>
         </div>
       </div>
-
-      
     </section>
 
-    <section>
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Ways of getting in touch</h2>
+    <section class="bg-golden">
+      <div class="container section-title section-title-secondary" data-aos="fade-up">
+        <h2 class="black">What is it like to contact the Helpline?</h2>
       </div>
-
       <div class="hero-dup">
-
         <div class="col-lg-10 d-flex align-items-stretch content">
           <div class="d-flex flex-column justify-content-center">
             <div class="row gy-4 block">
@@ -318,151 +317,7 @@
       </div>
     </section>
 
-    <section id="testimonials" class="testimonials section">
 
-      <div class="container">
-
-        <div class="row align-items-center">
-
-          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
-            <h3>Testimonials</h3>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </p>
-          </div>
-
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo &amp; Founder</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Sara Wilsson</h3>
-                        <h4>Designer</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Jena Karlis</h3>
-                        <h4>Store Owner</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Matt Brandon</h3>
-                        <h4>Freelancer</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>John Larson</h3>
-                        <h4>Entrepreneur</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
   </main>
 
   <!-- <div id="footer_placeholder"></div> -->
@@ -581,14 +436,48 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
+          <button type="button" class="modal-button bg-golden" onclick="sendMessage()">Send Message</button>
         </div>
       </div>
     </div>
   </div>
+  <button onclick="whatsappMessageModel()" class="chat_button ">
+    <i id="chatOpen" class="bi bi-whatsapp white"></i>
+  </button>
 
-  <button href="#" class="whatsapp-btn d-flex align-items-center justify-content-center"
-    onclick="whatsappMessageModel()"><i class="bi bi-whatsapp"></i></button>
+
+  <div id="chatbar" class="chat_box animated fadeInUp">
+    <div class="chat_box_header">
+    </div>
+    <div id="chatBody" class="chat_box_body">
+      <div class="modal-dialog">
+        <div class="modal-content light-background">
+          <div class="modal-header">
+            <h5 class="modal-title">Send a WhatsApp Message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chat_box_footer">
+
+      <input type="text" id="MsgInput" placeholder="Enter Message">
+      <button onclick="send()"><i class="fab fa-telegram-plane"></i></button>
+    </div>
+  </div>
+  </div>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>

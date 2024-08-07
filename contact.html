@@ -16,7 +16,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -28,6 +28,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/chat.css" rel="stylesheet">
   <script src="/assets/js/loadfooter.js"></script>
 
 </head>
@@ -35,8 +36,7 @@
 <body>
   <header id="header" class="header sticky-top">
     <div class="branding d-flex align-items-center">
-
-      <div class="container position-relative d-flex align-items-center justify-content-between">
+      <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <img src="assets/images/Picsart_24-08-03_14-28-28-256-removebg.png" alt="xyz">
@@ -45,23 +45,22 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home<br></a></li>
+            <li><a href="physical_harm.html">What is abuse?</a></li>
+            <li><a href="your_rights.html">Your rights and options</a></li>
+            <li><a href="how_we_can_support_you.html">How we can support you</a></li>
             <li><a href="about_us.html">About Me</a></li>
-            <li class="dropdown"><a href="area_of_support.html"><span>Area Of Support</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="how_we_can_support_you.html">How we can support</a></li>
-              </ul>
-            </li>
+            <li><a href="area_of_support.html">Area Of Support</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-        <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal"
-        onclick="openModal()">Add
-        Feedback</button>
-      </div>
 
+        <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal"
+          onclick="openModal()">Add
+          Feedback</button>
+
+
+      </div>
     </div>
 
   </header>
@@ -177,7 +176,7 @@
             <a href="#linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-  
+
         <!-- Quick Links -->
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Quick Links</h4>
@@ -189,7 +188,7 @@
             <li><a href="privacy_policy.html">Privacy Policy</a></li>
           </ul>
         </div>
-  
+
         <!-- Contact Information -->
         <div class="col-lg-3 col-md-3 footer-links">
           <h4>Contact Us</h4>
@@ -199,7 +198,7 @@
             City, State, ZIP Code<br>
           </p>
         </div>
-  
+
         <!-- Social Media Links -->
         <div class="col-lg-3 col-md-3 footer-links">
           <h4>Follow Us</h4>
@@ -212,12 +211,12 @@
         </div>
       </div>
     </div>
-  
+
     <div class="container copyright text-center mt-4">
       <p></p>
     </div>
   </footer>
-  
+
 
   <!-- Feedback Modal -->
   <div class="card light-background" id="card">
@@ -245,39 +244,40 @@
 
     <div class="button">
       <button class="cancel-btn modal-button-close">Cancel</butto>
-      <button class="modal-button" onclick="submitFeedback()">Send Feedback</button>
+        <button class="modal-button" onclick="submitFeedback()">Send Feedback</button>
     </div>
     <button onclick="closeModal()" class="close">
       <i class="fas fa-times"></i>
     </button>
   </div>
 
-    <!-- Whatsapp Message Modal -->
-    <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
-      <div class="modal-dialog">
-          <div class="modal-content light-background">
-              <div class="modal-header">
-                  <h5 class="modal-title">Send a WhatsApp Message</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <form>
-                      <div class="form-group">
-                          <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
-                          <label for="message-text" class="col-form-label">Message:</label>
-                          <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
-                      </div>
-                  </form>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
-              </div>
-          </div>
+  <!-- Whatsapp Message Modal -->
+  <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
+    <div class="modal-dialog">
+      <div class="modal-content light-background">
+        <div class="modal-header">
+          <h5 class="modal-title">Send a WhatsApp Message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
+        </div>
       </div>
+    </div>
   </div>
-  
-  <button href="#" class="whatsapp-btn d-flex align-items-center justify-content-center" onclick="whatsappMessageModel()"><i
-    class="bi bi-whatsapp"></i></button>
+
+  <button onclick="whatsappMessageModel()" class="chat_button ">
+    <i id="chatOpen" class="bi bi-whatsapp white"></i>
+  </button>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
