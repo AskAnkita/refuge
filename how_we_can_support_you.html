@@ -56,11 +56,9 @@
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <button class="cta-btn d-none d-sm-block" id="feeback_btn" data-toggle="modal" onclick="openModal()">Add
-          Feedback</button>
-
-
+        <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal"
+        onclick="openModal()">Add
+        Feedback</button>
       </div>
 
     </div>
@@ -93,43 +91,47 @@
   </section>
 
   <section>
-
-    <div class="container">
-      <div>
-        <h2>Contact the 24-hour National Domestic Abuse Helpline</h2>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <a href="#" class="stretched-link">
-                <h3>Call us 24/7</h3>
-              </a>
-              <p><a href="tel:08082000247">08082000247</a><br><br>
-                Call for free and in confidence, 24-hours a day: 0808 2000 247.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <a href="#" class="stretched-link">
-                <h3>Use our quick message</h3>
-              </a>
-              <p><br><br>
-                Direct message to our whatsapp</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
+    <div class="container" id="hr-24">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 class="gradient-text">Contact the 24-hour National Domestic Abuse Helpline</h2>
       </div>
-    </div> 
+
+      <div class="row gy-4 justify-content-center">
+        <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item position-relative p-4 text-center">
+            <a href="tel:08082000247" class="stretched-link">
+              <h3>Call us 24/7</h3>
+            </a>
+            <p>
+              <a href="tel:08082000247" class="black">
+                <h2>0808 2000 247</h2>
+              </a><br><br>
+            <h6>Call for free and in confidence, 24-hours a day: 0808 2000 247.</h6>
+            </p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100" onclick="whatsappMessageModel()">
+          <div class="service-item position-relative p-4 text-center">
+            <a href="#" class="stretched-link">
+              <h3>Use our quick message</h3>
+            </a>
+            <p>
+              <br><br>
+            <h6>Direct message to our WhatsApp</h6>
+            </p>
+          </div>
+        </div><!-- End Service Item -->
+      </div>
+    </div>
   </section>
+  `
 
   <section class="support-section">
-    <!-- <div class="container section-title" data-aos="fade-up"> -->
-    <h2 class="d-flex justify-content-center">What is it like to call the Helpline?</h2>
+    <div class="container section-title" data-aos="fade-up">
+      <h2 class="d-flex justify-content-center">What is it like to call the Helpline?</h2>
 
-    <!-- </div> -->
+    </div>
     <div class="container">
       <div class="support-grid">
         <div class="support-item">
@@ -153,41 +155,72 @@
   </section>
 
   <section class="spotting">
-    <div class="container ">
+    <div class="container section-title section-title-secondary" data-aos="fade-up">
       <h2>Accessing refuge and other services</h2>
       <p>As a woman fleeing domestic abuse, you may want to access specialist refuge accommodation. The Helpline can
         help you find a refuge vacancy for you and your children; call us for more information. We can also support you
         to find other specialist services in your community, which can provide support whether or not you have left your
         partner.</p>
-      <div class="row justify-content-between">
-        <div class="col-lg-4 col-md-6 support-card-grid" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-item  position-relative">
-            <a href="planning_to_leave_my_abuser.html" class="stretched-link">
-              <h3>I am planning to leave my abuser</h3>
-            </a>
-            <a href="" class="secondry">Read more <i class="bi bi-arrow-right"></i></a><br><br>
-          </div>
-        </div>
+    </div>
 
-        <div class="col-lg-3 col-md-6 support-card-grid" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-item  position-relative">
-            <a href="domestic_abuse_services.html" class="stretched-link">
-              <h3>Specialist domestic abuse services</h3>
-            </a>
-            <a href="" class="secondry">Read more <i class="bi bi-arrow-right"></i></a><br><br>
-          </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 support-card-grid" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-item  position-relative">
-            <a href="our-dv-savoiurs.html" class="stretched-link">
-              <h3>What is it like to go into a refuge?</h3>
-            </a>
-            <a href="" class="secondry">Read more <i class="bi bi-arrow-right"></i></a><br><br>
-          </div>
+    <div class="d-flex justify-content-center">
+      <div class="col-lg-10">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <!-- <div class="icon">
+                  <i class="fas fa-pills"></i>
+                </div> -->
+              <a href="still_living_with_my_abuser.html" class="stretched-link">
+                <h1>I am still living with my abuser</h1>
+              </a>
+              <a href="still_living_with_my_abuser.html">Read more</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <a href="planning_to_leave_my_abuser.html" class="stretched-link">
+                <h1>I am planning to leave my abuser</h1>
+              </a>
+              <a href="planning_to_leave_my_abuser">Read more</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <a href="have_already_left_my_abuser.html" class="stretched-link">
+                <h1>I have already left my abuser</h1>
+              </a>
+              <a href="have_already_left_my_abuser.html">Read more</a>
+            </div>
+          </div><!-- End Service Item -->
         </div>
       </div>
     </div>
+  </section>
+
+  <section id="menAbuse">
+    <div class="container section-title" data-aos="fade-up">
+      <h2 class="gradient-text">Support for men experiencing domestic abuse</h2>
+    </div>
+    <a href="https://mensadviceline.org.uk/">
+      <div class="container men-abuse">
+        <div class="insight-teaser__title-wrap">
+          <h2 class="standard insight-teaser__title">
+            Support for men experiencing domestic abuse </h2>
+        </div>
+        <p class="insight-teaser__excerpt">
+          We recognise that men can experience domestic abuse too. Nobody should have to live in fear of their partner.
+          There are specialist services to support men. </p>
+
+        <div class="insight-teaser__prompt">
+          <p>
+            Visit Men's Advice Line, run by Respect <i class="bi bi-box-arrow-up-right"></i> </p>
+        </div>
+      </div>
+    </a>
   </section>
 
 
