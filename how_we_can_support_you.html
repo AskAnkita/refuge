@@ -45,6 +45,7 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="physical_harm.html">What is abuse?</a></li>
             <li><a href="your_rights.html">Your rights and options</a></li>
             <li><a href="how_we_can_support_you.html">How we can support you</a></li>
@@ -66,14 +67,14 @@
   </header>
 
   <!-- this section contains support items -->
-  <section id="hero" class="support section light-background support-hero">
+  <section id="hero" class="support section light-background support-hero support-banner">
 
     <img src="assets/images/support.jpg" alt="" data-aos="fade-in" class="w-100 h-80">
     <div class="support-overlay"></div>
 
     <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
       <h2>How we can support you</h2>
-      <p>You are not alone. DV Shaviours can support you.</p>
+      <p>You are not alone. DV Survivors can support you.</p>
     </div>
   </section>
 
@@ -101,16 +102,19 @@
 
       <div class="row gy-2">
         <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-item second  position-relative">
-            <h3>Call us 24/7</h3>
-            <p>
-              <a href="tel:08082000247" class="white">
-                <h2>0808 2000 247</h2>
-              </a><br><br>
-            <h6>Call for free and in confidence, 24-hours a day: 0808 2000 247.</h6>
-            </p>
+          <div class="service-item second position-relative">
+            <div class="flex-container">
+              <h3>Call us 24/7</h3>
+              <p>
+                <a href="tel:01223 607990 " class="white">
+                  <h2>01223 607990 </h2>
+                </a>
+              </p>
+              <h6>Call for free and in confidence, 24-hours a day: 01223 607990 .</h6>
+            </div>
           </div>
-        </div><!-- End Service Item -->
+        </div>
+        <!-- End Service Item -->
 
         <div class="col-lg-6 col-md-6 why-box-div" data-aos="fade-up" data-aos-delay="200"
           onclick="whatsappMessageModel()">
@@ -138,7 +142,7 @@
     <div class="container">
       <div class="support-grid">
         <div class="support-item">
-          <h3>We are a team of highly-trained, female advisers</h3>
+          <h3>We are a team of highly-trained advisers</h3>
           <p>We won’t judge you or tell you what to do; we are here to listen.</p>
         </div>
         <div class="support-item">
@@ -334,32 +338,28 @@
   </div>
 
   <!-- Whatsapp Message Modal -->
-  <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
-    <div class="modal-dialog">
-      <div class="modal-content light-background">
-        <div class="modal-header">
-          <h5 class="modal-title">Send a WhatsApp Message</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
-              <label for="message-text" class="col-form-label">Message:</label>
-              <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
-        </div>
+  <div id="whatsappMessageModel" class="modal">
+    <div class="modal-content light-background">
+      <span class="close" onclick="closeWtsModal()">&times;</span>
+      <h5 class="modal-title">Send a WhatsApp Message</h5>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-button bg-golden" onclick="sendMessage()">Send Message</button>
       </div>
     </div>
   </div>
-
-  <button onclick="whatsappMessageModel()" class="chat_button ">
+  <button onclick="whatsappMessageModel()" class="chat_button">
     <i id="chatOpen" class="bi bi-whatsapp white"></i>
   </button>
+  
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 

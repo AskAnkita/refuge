@@ -57,6 +57,7 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="physical_harm.html">What is abuse?</a></li>
             <li><a href="your_rights.html">Your rights and options</a></li>
             <li><a href="how_we_can_support_you.html">How we can support you</a></li>
@@ -270,41 +271,41 @@
       </div>
     </section>
 
-    <section class="bg-golden">
-      <div class="container section-title section-title-secondary" data-aos="fade-up">
-        <h2 class="black">What is it like to contact the Helpline?</h2>
+    <section>
+      <div class="container section-title" data-aos="fade-up">
+        <h2 >What is it like to contact the Helpline?</h2>
       </div>
       <div class="hero-dup">
         <div class="col-lg-10 d-flex align-items-stretch content">
           <div class="d-flex flex-column justify-content-center">
-            <div class="row gy-4 block">
+            <div class="row gy-4 block black">
 
               <div class="col-xl-3 d-flex align-items-stretch container">
-                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="300">
-                  <h3>We are a team of highly-trained, female advisers</h3>
-                  <p>We won’t judge you or tell you what to do; we are here to listen.</p>
+                <div class="icon-box d-flex-col bg-golden black" data-aos="zoom-out" data-aos-delay="300">
+                  <h3>We are a team of highly-trained advisers</h3>
+                  <p class="black">We won’t judge you or tell you what to do; we are here to listen.</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-3 d-flex align-items-stretch container">
-                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="400">
+                <div class="icon-box d-flex-col bg-golden" data-aos="zoom-out" data-aos-delay="400">
                   <h3>We will empower you</h3>
-                  <p>We will empower you to understand your options and support you to make any decisions about the
+                  <p class="black">We will empower you to understand your options and support you to make any decisions about the
                     future.</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-3 d-flex align-items-stretch container">
-                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="500">
+                <div class="icon-box d-flex-col bg-golden" data-aos="zoom-out" data-aos-delay="500">
                   <h3>We can support you to increase your safety</h3>
-                  <p>We can help you find a refuge place, or other specialist services.</p>
+                  <p class="black">We can help you find a refuge place, or other specialist services.</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-3 d-flex align-items-stretch container">
-                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="500">
+                <div class="icon-box d-flex-col bg-golden" data-aos="zoom-out" data-aos-delay="500">
                   <h3>We can talk in confidence</h3>
-                  <p>We can talk in confidence, in many different languages, 24-hours a day, 365 days a year, for as
+                  <p class="black">We can talk in confidence, in many different languages, 24-hours a day, 365 days a year, for as
                     long
                     as you need.</p>
                 </div>
@@ -410,7 +411,7 @@
     </div>
 
     <div class="button">
-      <button class="cancel-btn modal-button-close">Cancel</butto>
+      <button class="cancel-btn modal-button-close" onclick="closeModal()">Cancel</butto>
         <button class="modal-button" onclick="submitFeedback()">Send Feedback</button>
     </div>
     <button onclick="closeModal()" class="close">
@@ -419,65 +420,29 @@
   </div>
 
   <!-- Whatsapp Message Modal -->
-  <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
-    <div class="modal-dialog">
-      <div class="modal-content light-background">
-        <div class="modal-header">
-          <h5 class="modal-title">Send a WhatsApp Message</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
-              <label for="message-text" class="col-form-label">Message:</label>
-              <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="modal-button bg-golden" onclick="sendMessage()">Send Message</button>
-        </div>
+  <div id="whatsappMessageModel" class="modal">
+    <div class="modal-content light-background">
+      <span class="close" onclick="closeWtsModal()">&times;</span>
+      <h5 class="modal-title">Send a WhatsApp Message</h5>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-button bg-golden" onclick="sendMessage()">Send Message</button>
       </div>
     </div>
   </div>
-  <button onclick="whatsappMessageModel()" class="chat_button ">
+  <button onclick="whatsappMessageModel()" class="chat_button">
     <i id="chatOpen" class="bi bi-whatsapp white"></i>
   </button>
 
 
-  <div id="chatbar" class="chat_box animated fadeInUp">
-    <div class="chat_box_header">
-    </div>
-    <div id="chatBody" class="chat_box_body">
-      <div class="modal-dialog">
-        <div class="modal-content light-background">
-          <div class="modal-header">
-            <h5 class="modal-title">Send a WhatsApp Message</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="chat_box_footer">
-
-      <input type="text" id="MsgInput" placeholder="Enter Message">
-      <button onclick="send()"><i class="fab fa-telegram-plane"></i></button>
-    </div>
-  </div>
-  </div>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -500,9 +465,9 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
-    // setTimeout(function () {
-    //   whatsappMessageModel();
-    // }, 3000);
+    setTimeout(function () {
+      whatsappMessageModel();
+    }, 3000);
   </script>
 
 </body>

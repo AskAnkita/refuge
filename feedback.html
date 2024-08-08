@@ -330,30 +330,25 @@
   </div>
 
   <!-- Whatsapp Message Modal -->
-  <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
-    <div class="modal-dialog">
-      <div class="modal-content light-background">
-        <div class="modal-header">
-          <h5 class="modal-title">Send a WhatsApp Message</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
-              <label for="message-text" class="col-form-label">Message:</label>
-              <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
-        </div>
+  <div id="whatsappMessageModel" class="modal">
+    <div class="modal-content light-background">
+      <span class="close" onclick="closeWtsModal()">&times;</span>
+      <h5 class="modal-title">Send a WhatsApp Message</h5>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-button bg-golden" onclick="sendMessage()">Send Message</button>
       </div>
     </div>
   </div>
-
-  <button onclick="whatsappMessageModel()" class="chat_button ">
+  <button onclick="whatsappMessageModel()" class="chat_button">
     <i id="chatOpen" class="bi bi-whatsapp white"></i>
   </button>
 

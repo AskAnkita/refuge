@@ -58,6 +58,7 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="physical_harm.html">What is abuse?</a></li>
             <li><a href="your_rights.html">Your rights and options</a></li>
             <li><a href="how_we_can_support_you.html">How we can support you</a></li>
@@ -142,48 +143,35 @@
       <div class="support-grid">
         <div class="support-item col-md-2 col-lg-2">
           <h2>Legal Help</h2>
-          <p class="second-card-text  black">Domestic abuse is against the law. You can report your abuser to the
+          <p class="second-card-text">Domestic abuse is against the law. You can report your abuser to the
             police. You can also use the civil law to protect yourself and your children, without involving police.
-            In an emergency, call 999. <a href="#">More &rarr;</a></p>
+            In an emergency, call 999. <a href="legal_help.html">More &rarr;</a></p>
         </div>
         <div class="support-item">
           <h2>Help with housing</h2>
           <p>If you are fleeing domestic abuse, you have rights around housing. You
             can go to a refuge, or seek help from any local council. You can also seek support to make your property
-            safer. <a href="#">More &rarr;</a></p>
+            safer. <a href="help_with_housing.html">More &rarr;</a></p>
         </div>
         <div class="support-item">
           <h2>Help With Money</h2>
           <p>These are steps you can take to increase your financial independence
-            and begin to re-build your life, fre from fear. <a href="#">More &rarr;</a></p>
+            and begin to re-build your life, fre from fear. <a href="help_with_money.html">More &rarr;</a></p>
         </div>
-        <!-- <div class="support-item">
-          <h2>Help with housing</h2>
-            <p>If you are fleeing domestic abuse, you have rights around housing. You
-              can go to a refuge, or seek help from any local council. You can also seek support to make your property
-              safer. <a href="#">More &rarr;</a></p>
-            </p>
-        </div>
-        <div class="support-item">
-          <h2>Help With Money</h2>
-            <p>These are steps you can take to increase your financial independence
-              and begin to re-build your life, fre from fear. <a href="#">More &rarr;</a></p>
-            </p>
-        </div> -->
         <div class="support-item">
           <h2>Protecting My Children</h2>
           <p>Not only hitting. He might restrain you or throw objects. He might pinch or shove you and claim it’s a
-            ‘joke’. <a href="#">More &rarr;</a></p>
+            ‘joke’. <a href="protecting_my_children.html">More &rarr;</a></p>
         </div>
         <div class="support-item">
           <h2>Goverment Benifits</h2>
           <p>Learn more about what benifits you might be entitled to as a woman
-            fleeing domestic abuse. <a href="#">More &rarr;</a></p>
+            fleeing domestic abuse. <a href="goverment_benifits.html">More &rarr;</a></p>
         </div>
         <div class="support-item">
           <h2>Domestic Abuse Seervices</h2>
           <p>There are specialist, confidential services that can support you weather
-            you have left your partner or not.<a href="#">More &rarr;</a></p>
+            you have left your partner or not.<a href="domestic_abuse_services.html">More &rarr;</a></p>
         </div>
       </div>
 
@@ -290,30 +278,25 @@
   </div>
 
   <!-- Whatsapp Message Modal -->
-  <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
-    <div class="modal-dialog">
-      <div class="modal-content light-background">
-        <div class="modal-header">
-          <h5 class="modal-title">Send a WhatsApp Message</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
-              <label for="message-text" class="col-form-label">Message:</label>
-              <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
-        </div>
+  <div id="whatsappMessageModel" class="modal">
+    <div class="modal-content light-background">
+      <span class="close" onclick="closeWtsModal()">&times;</span>
+      <h5 class="modal-title">Send a WhatsApp Message</h5>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-button bg-golden" onclick="sendMessage()">Send Message</button>
       </div>
     </div>
   </div>
-
-  <button onclick="whatsappMessageModel()" class="chat_button ">
+  <button onclick="whatsappMessageModel()" class="chat_button">
     <i id="chatOpen" class="bi bi-whatsapp white"></i>
   </button>
 
@@ -337,11 +320,6 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script>
-    // setTimeout(function () {
-    //   whatsappMessageModel();
-    // }, 3000);
-  </script>
 
 </body>
 

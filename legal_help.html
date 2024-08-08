@@ -58,15 +58,16 @@
 
                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li><a href="physical_harm.html">What is abuse?</a></li>
-                        <li><a href="your_rights.html">Your rights and options</a></li>
-                        <li><a href="how_we_can_support_you.html">How we can support you</a></li>
-                        <li><a href="about_us.html">About Me</a></li>
-                        <li><a href="area_of_support.html">Area Of Support</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="physical_harm.html">What is abuse?</a></li>
+                      <li><a href="your_rights.html">Your rights and options</a></li>
+                      <li><a href="how_we_can_support_you.html">How we can support you</a></li>
+                      <li><a href="about_us.html">About Me</a></li>
+                      <li><a href="area_of_support.html">Area Of Support</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-                </nav>
+                  </nav>
 
                 <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal"
                     onclick="openModal()">Add
@@ -520,33 +521,27 @@
     </div>
 
     <!-- Whatsapp Message Modal -->
-    <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
-        <div class="modal-dialog">
-            <div class="modal-content light-background">
-                <div class="modal-header">
-                    <h5 class="modal-title">Send a WhatsApp Message</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"
-                                placeholder="Write some message here"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
-                </div>
-            </div>
+    <div id="whatsappMessageModel" class="modal">
+        <div class="modal-content light-background">
+          <span class="close" onclick="closeWtsModal()">&times;</span>
+          <h5 class="modal-title">Send a WhatsApp Message</h5>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modal-button bg-golden" onclick="sendMessage()">Send Message</button>
+          </div>
         </div>
-    </div>
-
-    <button onclick="whatsappMessageModel()" class="chat_button ">
+      </div>
+      <button onclick="whatsappMessageModel()" class="chat_button">
         <i id="chatOpen" class="bi bi-whatsapp white"></i>
-    </button>
+      </button>
 
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>

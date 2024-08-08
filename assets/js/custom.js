@@ -65,17 +65,21 @@ function submitFeedback() {
     });
 }
 
+// Function to open the modal
 function whatsappMessageModel() {
-
-    $('body').removeClass('modal-open');
-                $('.modal-backdrop').remove();
-    var myModal = new bootstrap.Modal(document.getElementById('whatsappMessageModel'), {
-        keyboard: false
-    });
-    myModal.show();
-
-    
+    var modal = document.getElementById('whatsappMessageModel');
+    modal.style.display = 'block';
 }
+
+
+// Close the modal if the user clicks outside of it
+window.onclick = function (event) {
+    var modal = document.getElementById('whatsappMessageModel');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
 
 function sendMessage() {
     var message = document.getElementById('message-text').value;
@@ -87,6 +91,29 @@ function sendMessage() {
 function closeWtsModal() {
     $('.modal-backdrop').removeClass('show');
 }
+
+// Function to open the modal
+function whatsappMessageModel() {
+    var modal = document.getElementById('whatsappMessageModel');
+    modal.style.display = 'block';
+}
+
+// Function to close the modal
+function closeWtsModal() {
+    var modal = document.getElementById('whatsappMessageModel');
+    modal.style.display = 'none';
+}
+
+
+// Close the modal if the user clicks outside of it
+window.onclick = function (event) {
+    var modal = document.getElementById('whatsappMessageModel');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
+
 
 function checkWhyBoxVisibility() {
     const whyBox = document.querySelector('.why-box.aos-init.aos-animate');
@@ -127,20 +154,18 @@ $('#whatsappMessageModel').on('hidden.bs.modal', function (e) {
 var ischatopen = false;
 var ele = document.getElementById("chatbar");
 
-function openChatBox()
-{
-  if(ischatopen == false)
-    {
-       ele.classList.add("toggle");
-       ischatopen = true;
-       document.getElementById("chatOpen").classList.remove("fa-comments");
-document.getElementById("chatOpen").classList.add("fa-times");
-      
+function openChatBox() {
+    if (ischatopen == false) {
+        ele.classList.add("toggle");
+        ischatopen = true;
+        document.getElementById("chatOpen").classList.remove("fa-comments");
+        document.getElementById("chatOpen").classList.add("fa-times");
+
     }
-  else {
-     ele.classList.remove("toggle");
-     ischatopen = false;
-    document.getElementById("chatOpen").classList.add("fa-comments");
-document.getElementById("chatOpen").classList.remove("fa-times");
-  }
+    else {
+        ele.classList.remove("toggle");
+        ischatopen = false;
+        document.getElementById("chatOpen").classList.add("fa-comments");
+        document.getElementById("chatOpen").classList.remove("fa-times");
+    }
 }

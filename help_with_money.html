@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cilil matter</title>
-
+    <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="assets/images/Picsart_24-08-03_14-28-28-256-removebg.png">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -15,7 +14,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Fo3rlrQkz1yb3dCbwO2Pc8WYBJeE4zd+BrjY+8lDJ3MUp95uNZO6wA4ImbO7yIoKk6H4ojzp+X5rAHgC5X3V3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        integrity="sha384-1E1t3jAgStw1+3E6z9YxF/k12WWcGP02FRFlJ/0/qHQQUSC5kC+qXlf2CXZDJ94l" crossorigin="anonymous">
+    <!-- Toster -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,9 +36,14 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/about_us.css" rel="stylesheet">
+    <link href="assets/css/yout-right.css" rel="stylesheet">
     <link href="assets/css/chat.css" rel="stylesheet">
-    <script src="assets/js/loadfooter.js"></script>
-    <script src="assets/js/loadheader.js"></script>
+
+    <script id="footer-script" src="assets/js/loadfooter.js"></script>
+    <script id="header-script" src="assets/js/loadheader.js"></script>
+
+    <title>Your Rights</title>
 </head>
 
 <body>
@@ -46,16 +58,16 @@
 
                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="physical_harm.html">What is abuse?</a></li>
-                        <li><a href="your_rights.html">Your rights and options</a></li>
-                        <li><a href="how_we_can_support_you.html">How we can support you</a></li>
-                        <li><a href="about_us.html">About Me</a></li>
-                        <li><a href="area_of_support.html">Area Of Support</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="physical_harm.html">What is abuse?</a></li>
+                      <li><a href="your_rights.html">Your rights and options</a></li>
+                      <li><a href="how_we_can_support_you.html">How we can support you</a></li>
+                      <li><a href="about_us.html">About Me</a></li>
+                      <li><a href="area_of_support.html">Area Of Support</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-                </nav>
+                  </nav>
 
                 <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal"
                     onclick="openModal()">Add
@@ -67,77 +79,93 @@
 
     </header>
 
-    <main class="main">
-        <section>
+    <section id="Supporting" class="services section">
 
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Civil Matter</h2>
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Help with Money</h2>
+        </div>
+    </section>
+    <section>
+        <div class="leave-absuer">
+            <div class="wid-700">
+                <h3>Please note: the information on these pages is intended as a general guide only; each woman’s
+                    situation is different. Women should call us on 0808 2000 247 to discuss their rights and options in
+                    more detail.</h3><br>
+                <p>
+                    Financial difficulties can be scary or confusing to manage at the best of times, but untangling such
+                    problems can be even more daunting if you have also experienced economic abuse. Just remember, you
+                    are not alone.
+                </p><br>
+                <p>
+                    Economic abuse is a form of domestic abuse. It is very common, with approximately 1 in 5 adults in
+                    the UK experiencing it at some point. It is a way of controlling a person’s ability to acquire, use
+                    and maintain their own money and resources. Economic abuse can take many forms. Abusers may prevent
+                    you from earning or accessing your own money; spend or take your money without your consent; build
+                    up debts in your name; damage your possessions or property. If you are separated and have children,
+                    the abuser might withhold child maintenance payments.
+                </p><br>
+
+                <h2>Refuge has created a list of questions which might help you recognise whether you are experiencing
+                    economic abuse. Does/did your partner:</h2><br>
+
+                <ul>
+                    <li>Prevent you from working, or stop you from going to work?</li>
+                    <li>Prevent you from going to college or university?</li>
+                    <li>Ask you to account for every penny you spend?</li>
+                    <li>Check your receipts, bank statements or banking apps so they can monitor how much you are
+                        spending</li>
+                    <li>Keep the log-in details, bank cards or PIN numbers for your joint account so that you cannot
+                        access the account?</li>
+                    <li>Spend money allocated to bills for other things?</li>
+                    <li>Steal, damage or destroy your possessions?</li>
+                    <li>Spend whatever they want, but belittle you for spending any money?</li>
+                    <li>Insist on control of all financial matters?</li>
+                    <li>Insist that all the bills and loans are in your name?</li>
+                    <li>Make you ask permission before making any purchase, no matter how small?</li>
+                    <li>Make significant financial decisions without you (e.g. buying a new home, car)?</li>
+                    <li>Place debts in your name?</li>
+                    <li>Steal money from you, or use your bank card without permission?</li>
+                    <li>Withhold child maintenance payments?</li>
+                    <li>Initiate expensive post separation legal battles knowing you could not afford to fight, or it
+                        would bankrupt you? If any of these situations feel familiar, you may be experiencing economic
+                        abuse.</li>
+
+                </ul>
+
+                <p>
+                    If you are experiencing economic abuse, it is likely you are experiencing other forms of abuse from
+                    your partner.<br></br>
+
+                    If you have started to worry about your financial situation and think that you might be experiencing
+                    abuse there are some steps you could take to protect yourself now. We can provide support and help
+                    for you to make the changes which could help protect you. You can speak to someone about your
+                    options – you can speak to an advisor from the Freephone 24 Hour National Domestic Abuse Helpline,
+                    run by Refuge on 0808 2000 247.
+                </p>
+
+                <h2>Practical tips:</h2>
+
+                <p>If you are experiencing economic abuse, here are some practical first steps you can take.
+                    Remember, only make them if you can do so safely:</p>
+                <ul>
+                    <li>Speak to an adviser from the www.nationaldahelpline.org.uk</li>
+                    <li>Meet with an Independent Domestic Violence Advocate (IDVA)</li>
+                    <li>Freeze any joint accounts</li>
+                    <li>Change PIN numbers and online banking passwords</li>
+                    <li>Be clear what is in your name and what is not—joint assets, tenancy agreements, mortgages, bank
+                        accounts, and credit cards</li>
+                    <li>Know where important financial documents are kept: keep copies in an emergency bag or with a
+                        friend
+                    </li>
+                    <li>Consider talking to a financial expert—free services such as Citizens Advice, StepChange, or the
+                        Money Advice Service.</li>
+                    <li>Identify which benefits you are entitled to. Use a benefits calculator— Entitled To, the
+                        government
+                        benefits calculator.</li>
+                </ul>
             </div>
-            <div class="leave-absuer">
-                <div class="wid-700">
-                    <p>
-                        Civil disputes encompass a broad spectrum of cases, ranging from minor issues like damaged goods
-                        or debt recovery to complex litigations between multinational corporations. Despite the
-                        potential for legal action, most civil disputes are resolved outside of court, and those that
-                        proceed to court frequently settle before reaching a full trial. Civil matters are closely
-                        linked with domestic violence (DV) assaults which can be further explored under the civil law
-                        umbrella ensuring the victim is protected and helped during this process. Please read below for
-                        further information.<br></br>
-
-                        Civil vs Criminal Domestic Violence: What’s The Difference:
-                        Domestic violence is a complex issue, with the distinction between civil and criminal cases
-                        often being very subtle and influenced by factors beyond the victim's control. Understanding
-                        which aspects of a domestic violence case fall under criminal or civil law can be crucial for
-                        victims seeking to escape abuse, prevent further harm, and pursue charges against their abuser.
-                        This knowledge helps victims navigate the legal system more effectively, whether they are
-                        seeking protective orders, custody arrangements, or criminal prosecution of the abuser.<br></br>
-
-
-                        Civil Domestic Violence Issues
-                        Civil domestic violence issues focus on protecting the victim. A victim can go to court or have
-                        their lawyer go on their behalf if this is their preference to request legal protection for
-                        themselves and their children. Since the burden of proof in civil domestic violence cases is
-                        lower than in criminal cases, it is usually easier for victims to obtain civil legal protection
-                        from their abusers compared to having them arrested, convicted, and jailed. However, many
-                        domestic violence cases involve both civil and criminal actions simultaneously.<br></br>
-
-                        Criminal Domestic Violence Issues
-                        Criminal domestic violence cases focus on investigating, prosecuting, and punishing offenders if
-                        they are convicted of the assault reported. It’s important for victims to recognize that
-                        physical abuse is just one type of domestic violence; other forms, such as emotional,
-                        psychological, and financial abuse. The burden of proof in criminal domestic violence cases is
-                        much higher, often requiring substantial evidence before a prosecutor will file charges.
-                        However, if an offender is convicted, they face severe penalties, including jail time, loss of
-                        rights, probation, and sometimes payment of restitution. These outcomes can not be promised
-                        during the claim process.<br></br>
-
-                        Getting Help with Domestic Violence Issues
-                        If you are a victim of domestic violence seeking support and legal assistance, a good first step
-                        is to contact DV survivors who can guide you in the right direction of reclaiming your voice,
-                        strength and control back. DV survivors can put you in contact with a supportive legal team who
-                        will guide you around all the legal terms during this journey. In addition to this, there are
-                        such things called a domestic violence restraining order (DVRO) which can be applied with the
-                        help from the legal team.<br></br>
-
-                        Area of civil matters <a href="index.html">DV survivors</a> can support you with are:
-
-                    <ul>
-                        <li> Temporary restraining orders</li>
-                        <li> Emergency child custody orders</li>
-                        <li> Filing for divorce</li>
-                        <li>Breech of bail</li>
-                        <li>physical, emotional and sexual harm (adults and children)</li>
-                        <li>parental alienation </li>
-                        <li>There is much more which can be supported with via the supportive legal teams that DV
-                            survivors work with.</li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- <div id="footer_placeholder"></div> -->
+        </div>
+    </section>
     <footer id="footer" class="footer light-background">
         <div class="container footer-top">
             <div class="row gy-4">
@@ -201,6 +229,7 @@
         </div>
     </footer>
 
+
     <!-- Feedback Modal -->
     <div class="card light-background" id="card">
         <div class="heading">
@@ -237,26 +266,25 @@
     <!-- Whatsapp Message Modal -->
     <div id="whatsappMessageModel" class="modal">
         <div class="modal-content light-background">
-            <span class="close" onclick="closeWtsModal()">&times;</span>
-            <h5 class="modal-title">Send a WhatsApp Message</h5>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"
-                            placeholder="Write some message here"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="modal-button bg-golden" onclick="sendMessage()">Send Message</button>
-            </div>
+          <span class="close" onclick="closeWtsModal()">&times;</span>
+          <h5 class="modal-title">Send a WhatsApp Message</h5>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modal-button bg-golden" onclick="sendMessage()">Send Message</button>
+          </div>
         </div>
-    </div>
-    <button onclick="whatsappMessageModel()" class="chat_button">
+      </div>
+      <button onclick="whatsappMessageModel()" class="chat_button">
         <i id="chatOpen" class="bi bi-whatsapp white"></i>
-    </button>
+      </button>
 
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
@@ -278,6 +306,12 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+        // setTimeout(function () {
+        //   whatsappMessageModel();
+        // }, 3000);
+    </script>
+
 </body>
 
 </html>

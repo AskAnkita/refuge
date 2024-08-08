@@ -45,6 +45,7 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="physical_harm.html">What is abuse?</a></li>
             <li><a href="your_rights.html">Your rights and options</a></li>
             <li><a href="how_we_can_support_you.html">How we can support you</a></li>
@@ -73,18 +74,44 @@
         <h2>Contact Us</h2>
         <p>Need assistance? Contact us through our website today!</p>
       </div><!-- End Section Title -->
-
-      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-        <iframe style="border:0; width: 100%; height: 270px;"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-          frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div><!-- End Google Maps -->
-
+      
+      <div class="contact-section">
+        <div class="map-container" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 100%;"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+            frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      
+        <div class="form-container col-lg-8" data-aos="fade-up" data-aos-delay="200">
+          <form id="contactForm" method="post" class="php-email-form">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required="" autocomplete="off">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="" autocomplete="off">
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required="" autocomplete="off">
+              </div>
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              </div>
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <button type="submit" class="bg-golden">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div> 
+    </section><!-- /Contact Section -->
+    <section class="contact section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-
-          <div class="col-lg-4">
+          <div class="d-flex justify-content-between">
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
@@ -97,7 +124,7 @@
               <a href="tel:1-562-867-5309"><i class="bi bi-telephone flex-shrink-0"></i></a>
               <div>
                 <h3>Whatsapp business number</h3>
-                <p>07923175219</p>
+                <p class="d-flex justify-content-center">07923175219</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -110,47 +137,9 @@
             </div><!-- End Info Item -->
 
           </div>
-
-          <div class="col-lg-8">
-            <form id="contactForm" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required=""
-                    autocomplete="off">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required=""
-                    autocomplete="off">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required=""
-                    autocomplete="off">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
         </div>
-
       </div>
-
-    </section><!-- /Contact Section -->
+    </section>
   </main>
 
   <!-- <div id="footer_placeholder"></div> -->
@@ -252,30 +241,25 @@
   </div>
 
   <!-- Whatsapp Message Modal -->
-  <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
-    <div class="modal-dialog">
-      <div class="modal-content light-background">
-        <div class="modal-header">
-          <h5 class="modal-title">Send a WhatsApp Message</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
-              <label for="message-text" class="col-form-label">Message:</label>
-              <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
-        </div>
+  <div id="whatsappMessageModel" class="modal">
+    <div class="modal-content light-background">
+      <span class="close" onclick="closeWtsModal()">&times;</span>
+      <h5 class="modal-title">Send a WhatsApp Message</h5>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-button bg-golden" onclick="sendMessage()">Send Message</button>
       </div>
     </div>
   </div>
-
-  <button onclick="whatsappMessageModel()" class="chat_button ">
+  <button onclick="whatsappMessageModel()" class="chat_button">
     <i id="chatOpen" class="bi bi-whatsapp white"></i>
   </button>
 
