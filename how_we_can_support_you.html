@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback</title>
-  <!-- Favicons -->
+  <title>Areas of Support</title>
   <link rel="icon" type="image/x-icon" href="assets/images/Picsart_24-08-03_14-28-28-256-removebg.png">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -27,16 +26,17 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/about_us.css" rel="stylesheet">
   <link href="assets/css/chat.css" rel="stylesheet">
+  <!-- about_me css file -->
+  <link href="assets/css/about_us.css" rel="stylesheet">
   <script src="assets/js/loadfooter.js"></script>
-  <script src="assets/js/loadheader.js"></script>
 </head>
 
 <body>
   <header id="header" class="header sticky-top">
     <div class="branding d-flex align-items-center">
-
-      <div class="container position-relative d-flex align-items-center justify-content-between">
+      <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <img src="assets/images/Picsart_24-08-03_14-28-28-256-removebg.png" alt="xyz">
@@ -45,191 +45,196 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home<br></a></li>
+            <li><a href="physical_harm.html">What is abuse?</a></li>
+            <li><a href="your_rights.html">Your rights and options</a></li>
+            <li><a href="how_we_can_support_you.html">How we can support you</a></li>
             <li><a href="about_us.html">About Me</a></li>
-            <li class="dropdown"><a href="area_of_support.html"><span>Area Of Support</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="how_we_can_support_you.html">How we can support</a></li>
-              </ul>
-            </li>
+            <li><a href="area_of_support.html">Area Of Support</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+
         <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal"
           onclick="openModal()">Add
           Feedback</button>
+
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- this section contains support items -->
+  <section id="hero" class="support section light-background support-hero">
+
+    <img src="assets/images/support.jpg" alt="" data-aos="fade-in" class="w-100 h-80">
+    <div class="support-overlay"></div>
+
+    <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+      <h2>How we can support you</h2>
+      <p>You are not alone. DV Shaviours can support you.</p>
+    </div>
+  </section>
+
+  <section class="emergency">
+
+    <div class="container emergency__text">
+
+      <p>If you are in an emergency, please call <a href="tel:999">999</a>.</p>
+
+      <p>If you’re worried someone might be monitoring your devices, exit this site and visit from a safe device.
+        <a href="about_us.html">Learn more about us.</a></p>
+
+    </div>
+
+  </section>
+
+  <section id="services" class="services section">
+
+    <!-- Section Title -->
+    <div class="container" data-aos="fade-up">
+      <h2>What Can I Do ?</h2>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-2">
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item second  position-relative">
+            <h3>Call us 24/7</h3>
+            <p>
+              <a href="tel:08082000247" class="white">
+                <h2>0808 2000 247</h2>
+              </a><br><br>
+            <h6>Call for free and in confidence, 24-hours a day: 0808 2000 247.</h6>
+            </p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6 col-md-6 why-box-div" data-aos="fade-up" data-aos-delay="200"
+          onclick="whatsappMessageModel()">
+          <div class="service-item second position-relative">
+            <h3>Use our quick message</h3>
+            <p>
+              <br><br>
+            <h6>Direct message to our WhatsApp</h6>
+            </p>
+          </div>
+        </div><!-- End Service Item -->
+
       </div>
 
     </div>
 
-  </header>
-  <main class="main">
-    <!-- Faq Section -->
-    <section id="faq" class="faq section light-background">
+  </section>
+  `
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>My Qualifications</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+  <section class="support-section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2 class="d-flex justify-content-center">What is it like to call the Helpline?</h2>
 
-      <div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>CFA Accredited Business:</h3>
-                <div class="faq-content">
-                  <p>Recognizing my professional commitment to high standards and continuous improvement.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>BA Hons Social Work Degree:</h3>
-                <div class="faq-content">
-                  <p>Providing a solid foundation in social work principles and practices.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Humanities and Social Sciences Diploma:</h3>
-                <div class="faq-content">
-                  <p>Broadening my understanding of human behavior and social structures.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Motivational Interviewing:</h3>
-                <div class="faq-content">
-                  <p>Equipping me with techniques to inspire and motivate individuals towards positive change.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Triple P Parenting Course:</h3>
-                <div class="faq-content">
-                  <p>Enhancing my skills in supporting parents and improving family dynamics.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>More:</h3>
-                <div class="faq-content">
-                  <p>• CSE awareness
-                    • County lines trained
-                    • DV awareness courses
-                    • Child to parent: parent to child harm
-                    • Basic first aid training
-                    • Health and social care
-                    • Enhanced DBS checked
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-
-            </div>
-
-          </div><!-- End Faq Column-->
-
+    </div>
+    <div class="container">
+      <div class="support-grid">
+        <div class="support-item">
+          <h3>We are a team of highly-trained, female advisers</h3>
+          <p>We won’t judge you or tell you what to do; we are here to listen.</p>
         </div>
-
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <div class="container">
-
-        <div class="row align-items-center">
-
-          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
-            <h3>Testimonials</h3>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </p>
-          </div>
-
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="swiper init-swiper">
-              <!-- <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": {
-                      "delay": 5000
-                    },
-                    "slidesPerView": "auto",
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-                    }
-                  }
-                </script> -->
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0"
-                        alt="">
-                      <div>
-                        <h3>Katie Ann</h3>
-                        <h4>Professional Advisor, CICA, DV Survivors</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>I am a dedicated and compassionate professional counselor, committed to positively impacting
-                        the lives of individuals who have experienced domestic violence. With a BA Hons degree in Social
-                        Work and extensive experience in frontline children and family practice from 2021, I bring a
-                        deep understanding and wealth of knowledge to my practice. My passion lies in empowering people
-                        to reclaim, find hope, and heal from the trauma they have endured.
-                        <br>Having worked closely with many survivors of abuse, I am well aware of the impact that
-                        domestic violence can have on a person’s physical, emotional and mental well-being My goal is to
-                        provide support, guidance and resources a to guide individuals through the arduous process of
-                        recovery. I believe in creating a safe and supportive environment where survivors can regain
-                        their confidence and rebuild their lives.
-                      </span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-          </div>
-
+        <div class="support-item">
+          <h3>We will empower you</h3>
+          <p>We will help you to understand your options and support you to make any decisions about the future.</p>
         </div>
-
+        <div class="support-item">
+          <h3>We can support you to increase your safety</h3>
+          <p>We can help you find a refuge space, or other specialist services</p>
+        </div>
+        <div class="support-item">
+          <h3>We can talk in confidence</h3>
+          <p>We can talk in confidence, in many different languages, 24-hours a day, 365 days a year.</p>
+        </div>
       </div>
+    </div>
+  </section>
 
-    </section><!-- /Testimonials Section -->
+  <section class="spotting">
+    <div class="container section-title section-title-secondary" data-aos="fade-up">
+      <h2>Accessing refuge and other services</h2>
+      <p>As a woman fleeing domestic abuse, you may want to access specialist refuge accommodation. The Helpline can
+        help you find a refuge vacancy for you and your children; call us for more information. We can also support you
+        to find other specialist services in your community, which can provide support whether or not you have left your
+        partner.</p>
+    </div>
 
-  </main>
+
+    <div class="d-flex justify-content-center">
+      <div class="col-lg-10">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-3 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <!-- <div class="icon">
+              <i class="fas fa-pills"></i>
+            </div> -->
+              <a href="still_living_with_my_abuser.html" class="stretched-link">
+                <h1>I am still living with my abuser</h1>
+              </a>
+              <a href="still_living_with_my_abuser.html">Read more</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <a href="planning_to_leave_my_abuser.html" class="stretched-link">
+                <h1>I am planning to leave my abuser</h1>
+              </a>
+              <a href="planning_to_leave_my_abuser">Read more</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <a href="have_already_left_my_abuser.html" class="stretched-link">
+                <h1>I have already left my abuser</h1>
+              </a>
+              <a href="have_already_left_my_abuser.html">Read more</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <a href="civil_matter.html" class="stretched-link">
+                <h1>Civil Matter</h1>
+              </a>
+              <a href="civil_matter.html">Read more</a>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menAbuse">
+    <div class="container section-title" data-aos="fade-up">
+      <h2 class="gradient-text">Support for men experiencing domestic abuse</h2>
+    </div>
+    <a href="https://mensadviceline.org.uk/">
+      <div class="container men-abuse">
+        <div class="insight-teaser__title-wrap">
+          <h2 class="standard insight-teaser__title">
+            Support for men experiencing domestic abuse </h2>
+        </div>
+        <p class="insight-teaser__excerpt">
+          We recognise that men can experience domestic abuse too. Nobody should have to live in fear of their partner.
+          There are specialist services to support men. </p>
+
+        <div class="insight-teaser__prompt">
+          <p>
+            Visit Men's Advice Line, run by Respect <i class="bi bi-box-arrow-up-right"></i> </p>
+        </div>
+      </div>
+    </a>
+  </section>
+
 
   <!-- <div id="footer_placeholder"></div> -->
   <footer id="footer" class="footer light-background">
@@ -295,7 +300,6 @@
     </div>
   </footer>
 
-
   <!-- Feedback Modal -->
   <div class="card light-background" id="card">
     <div class="heading">
@@ -356,6 +360,8 @@
   <button onclick="whatsappMessageModel()" class="chat_button ">
     <i id="chatOpen" class="bi bi-whatsapp white"></i>
   </button>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

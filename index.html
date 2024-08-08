@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="assets/images/Picsart_24-08-03_14-28-28-256-removebg.png">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Fo3rlrQkz1yb3dCbwO2Pc8WYBJeE4zd+BrjY+8lDJ3MUp95uNZO6wA4ImbO7yIoKk6H4ojzp+X5rAHgC5X3V3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    integrity="sha384-1E1t3jAgStw1+3E6z9YxF/k12WWcGP02FRFlJ/0/qHQQUSC5kC+qXlf2CXZDJ94l" crossorigin="anonymous">
+  <!-- Toster -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,236 +32,479 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  
-    <title>Home</title>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/about_us.css" rel="stylesheet">
+  <link href="assets/css/chat.css" rel="stylesheet">
+
+  <script id="footer-script" src="assets/js/loadfooter.js"></script>
+  <script id="header-script" src="assets/js/loadheader.js"></script>
+
+  <title>Home</title>
 </head>
+
 <body>
-    <header id="header" class="header sticky-top">
+  <header id="header" class="header sticky-top">
+    <div class="branding d-flex align-items-center">
+      <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/images/Picsart_24-08-03_14-28-28-256-removebg.png" alt="xyz">
+          <!-- <h1 class="sitename">DV survivors</h1> -->
+        </a>
 
-        <div class="topbar d-flex align-items-center">
-          <div class="container d-flex justify-content-center justify-content-md-between">
-            <div class="contact-info d-flex align-items-center">
-              <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-              <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-            </div>
-            <div class="social-links d-none d-md-flex align-items-center">
-              <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div><!-- End Top Bar -->
-    
-        <div class="branding d-flex align-items-center">
-    
-          <div class="container position-relative d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center me-auto">
-              <!-- Uncomment the line below if you also wish to use an image logo -->
-              <img src="assets/images/refuse-log.png" alt="xyz">
-              <!-- <h1 class="sitename">DV survivors</h1> -->
-            </a>
-    
-            <nav id="navmenu" class="navmenu">
-              <ul>
-                <li><a href="#hero" class="active">Home<br></a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="solicitor.html">Solicitor</a></li>
-                <li class="dropdown"><a href="#"><span>Area Of Support</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">support 1</a></li>
-                    <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                      <ul>
-                        <li><a href="#">Deep Dropdown 1</a></li>
-                        <li><a href="#">Deep Dropdown 2</a></li>
-                        <li><a href="#">Deep Dropdown 3</a></li>
-                        <li><a href="#">Deep Dropdown 4</a></li>
-                        <li><a href="#">Deep Dropdown 5</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Dropdown 2</a></li>
-                    <li><a href="#">Dropdown 3</a></li>
-                    <li><a href="#">Dropdown 4</a></li>
-                  </ul>
-                </li>
-                <li><a href="privacy_policy.html">privacy policy</a></li>
-              </ul>
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
-    
-            <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
-    
-          </div>
-    
-        </div>
-    
-      </header>
-      <main class="main">
-    <!-- Hero Section -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="physical_harm.html">What is abuse?</a></li>
+            <li><a href="your_rights.html">Your rights and options</a></li>
+            <li><a href="how_we_can_support_you.html">How we can support you</a></li>
+            <li><a href="about_us.html">About Me</a></li>
+            <li><a href="area_of_support.html">Area Of Support</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <button class="cta-btn d-none d-sm-block bg-golden" id="feeback_btn" data-toggle="modal"
+          onclick="openModal()">Add
+          Feedback</button>
+
+
+      </div>
+    </div>
+  </header>
+  <main class="main">
+
+
     <section id="hero" class="hero section light-background">
+      <div class="container position-relative">
+        <div class="row d-flex align-items-center">
+          <div class="welcome col-lg-6 home-about-content" data-aos="fade-down" data-aos-delay="100">
+            <h2 class="gradient-text">Are you experiencing domestic abuse?</h2><br>
+            <h2 class="gradient-text">You are not alone</h2>
+          </div>
 
-        <img src="assets/images/Picsart_24-08-03_14-28-28-256.jpg" alt="" data-aos="fade-in">
-  
-        <div class="container position-relative">
-  
-          <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-            <h2>WELCOME TO DV SURVIVORS</h2>
-            <p>I am Katie Ann a dedicated professional advisor specializing in supporting domestic violence survivors to reclaim their lives and find hope and healing.
-            </p>
-          </div><!-- End Welcome -->
-  
-          <div class="content row gy-4">
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-                <h3>About This site</h3>
-                <p>
-                  Domestic abuse can range from physical, sexual to emotional trauma, significantly impacting the rest of a person's life. While compensation cannot undo the lived experiences you have endured, it can be a step towards reclaiming control and empowering you to rebuild your life
-                </p>
-                <div class="text-center">
-                  <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
-                </div>
-              </div>
-            </div><!-- End Why Box -->
-  
-            <div class="col-lg-8 d-flex align-items-stretch">
-              <div class="d-flex flex-column justify-content-center">
-                <div class="row gy-4">
-  
-                  <div class="col-xl-4 d-flex align-items-stretch">
-                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
-                      <i class="bi bi-clipboard-data"></i>
-                      <h4>Corporis voluptates officia eiusmod</h4>
-                      <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                    </div>
-                  </div><!-- End Icon Box -->
-  
-                  <div class="col-xl-4 d-flex align-items-stretch">
-                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
-                      <i class="bi bi-gem"></i>
-                      <h4>Ullamco laboris ladore pan</h4>
-                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                    </div>
-                  </div><!-- End Icon Box -->
-  
-                  <div class="col-xl-4 d-flex align-items-stretch">
-                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                      <i class="bi bi-inboxes"></i>
-                      <h4>Labore consequatur incidid dolore</h4>
-                      <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                    </div>
-                  </div><!-- End Icon Box -->
-  
-                </div>
-              </div>
-            </div>
-          </div><!-- End  Content-->
-  
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img class="d-none d-sm-none d-md-block responsive-image" src="assets/images/hero-image.webp" alt="">
+          </div>
         </div>
-  
-      </section><!-- /Hero Section -->
-    </main>
+      </div>
+    </section>
 
-    
-    <footer id="footer" class="footer light-background">
+    <section class="emergency">
 
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Medilab</span>
+      <div class="container emergency__text">
+
+        <p>If you are in an emergency, please call <a href="tel:999">999</a>.</p>
+
+        <p>If you’re worried someone might be monitoring your devices, exit this site and visit from a safe device.
+          <a href="about_us.html">Learn more about us.</a></p>
+
+      </div>
+
+    </section>
+
+    <section class="hero-dup">
+      <div class="col-lg-10 d-flex align-items-stretch content">
+        <div class="d-flex flex-column justify-content-center">
+          <div class="row gy-4 block">
+            <div class="col-xl-3 col-lg-6 d-flex align-items-stretch fixed-height">
+              <div class="icon-box d-flex align-items-center justify-content-center text-center" data-aos="zoom-out"
+                data-aos-delay="300">
+                <h3>Do you change your behaviour for partner’s reaction?</h3>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="col-xl-3 col-lg-6 d-flex align-items-stretch fixed-height">
+              <div class="icon-box d-flex align-items-center justify-content-center text-center" data-aos="zoom-out"
+                data-aos-delay="400">
+                <h3>Is your partner jealous or possessive?</h3>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="col-xl-3 col-lg-6 d-flex align-items-stretch fixed-height">
+              <div class="icon-box d-flex align-items-center justify-content-center text-center" data-aos="zoom-out"
+                data-aos-delay="500">
+                <h3>Do you feel like you’re walking on eggshells?</h3>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="col-xl-3 col-lg-6 d-flex align-items-stretch fixed-height">
+              <div class="icon-box d-flex align-items-center justify-content-center text-center" data-aos="zoom-out"
+                data-aos-delay="500">
+                <h3>Do you feel controlled, or isolated?</h3>
+              </div>
+            </div><!-- End Icon Box -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="services section">
+      <div class="container">
+
+        <div class="row gy-4 gx-5">
+
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/images/about-us.jpg" class="img-fluid home-about-image" alt="">
+          </div>
+
+          <div class="col-lg-6 content home-about-contant" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="gradient-text">How we can support you</h1>
+            <p class="gradient-text">find out more about how Refuge can help you.</p>
+            <div class="button">
+              <a href="how_we_can_support_you.html"><button class="modal-button bg-golden">Read more <i
+                    class="bi bi-arrow-right"></i></button></a>
+            </div>
+          </div>
+          <br>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="abuse" class="hero-dup">
+      <div class="col-lg-10">
+        <div class="content row gy-4">
+          <div class="col-12 col-md-4 mb-4 why-box-div">
+            <a href="physical_harm.html">
+              <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
+                data-aos-delay="200">
+                <h3 class="text-black">What is domestic abuse?</h3>
+                <p class="text-black">Domestic abuse can take many forms. Learn to spot the signs.</p>
+                <div class="text-center mt-auto">
+                  <a href="physical_harm.html" class="more-btn"><span>Learn More</span> <i
+                      class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
             </a>
-            <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
-            </div>
-            <div class="social-links d-flex mt-4">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
           </div>
-  
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
-            </ul>
+          <div class="col-12 col-md-4 mb-4 why-box-div">
+            <a href="your_rights.html">
+              <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
+                data-aos-delay="200">
+                <h3 class="text-black">Your rights and options</h3>
+                <p class="text-black">Find out more about what support is available for you and your children.</p>
+                <div class="text-center mt-auto">
+                  <a href="your_rights.html" class="more-btn"><span>Learn More</span> <i
+                      class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </a>
           </div>
-  
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
-            </ul>
+          <div class="col-12 col-md-4 mb-4 why-box-div">
+            <a href="supporting_a_survivour.html">
+              <div class="why-box bg-golden h-100 d-flex flex-column justify-content-between" data-aos="zoom-out"
+                data-aos-delay="200">
+                <h3 class="text-black">Supporting a survivor</h3>
+                <p class="text-black">If you’re worried about someone you care about, learn more about how you can
+                  support
+                  them.</p>
+                <div class="text-center mt-auto">
+                  <a href="supporting_a_survivour.html" class="more-btn"><span>Learn More</span> <i
+                      class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </a>
           </div>
-  
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Hic solutasetp</h4>
-            <ul>
-              <li><a href="#">Molestiae accusamus iure</a></li>
-              <li><a href="#">Excepturi dignissimos</a></li>
-              <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
-              <li><a href="#">Sit quas consectetur</a></li>
-            </ul>
-          </div>
-  
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nobis illum</h4>
-            <ul>
-              <li><a href="#">Ipsam</a></li>
-              <li><a href="#">Laudantium dolorum</a></li>
-              <li><a href="#">Dinera</a></li>
-              <li><a href="#">Trodelas</a></li>
-              <li><a href="#">Flexo</a></li>
-            </ul>
-          </div>
-  
         </div>
       </div>
-  
-      <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </section>
+
+
+    <section id="services" class="section keeping-safe">
+      <!-- <div class="container" data-aos="fade-up">
+        <h2></h2>
+      </div> -->
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Keeping safe</h2>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div class="col-lg-10">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-3 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <!-- <div class="icon">
+                <i class="fas fa-pills"></i>
+              </div> -->
+                <a href="still_living_with_my_abuser.html" class="stretched-link">
+                  <h1>I am still living with my abuser</h1>
+                </a>
+                <a href="still_living_with_my_abuser.html">Read more</a>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-3 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <a href="planning_to_leave_my_abuser.html" class="stretched-link">
+                  <h1>I am planning to leave my abuser</h1>
+                </a>
+                <a href="planning_to_leave_my_abuser">Read more</a>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-3 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <a href="have_already_left_my_abuser.html" class="stretched-link">
+                  <h1>I have already left my abuser</h1>
+                </a>
+                <a href="have_already_left_my_abuser.html">Read more</a>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-3 col-md-6 sec-div" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <a href="civil_matter.html" class="stretched-link">
+                  <h1>Civil Matter</h1>
+                </a>
+                <a href="civil_matter.html">Read more</a>
+              </div>
+            </div><!-- End Service Item -->
+          </div>
         </div>
       </div>
-  
-    </footer>
+    </section>
 
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <section class="bg-golden">
+      <div class="container section-title section-title-secondary" data-aos="fade-up">
+        <h2 class="black">What is it like to contact the Helpline?</h2>
+      </div>
+      <div class="hero-dup">
+        <div class="col-lg-10 d-flex align-items-stretch content">
+          <div class="d-flex flex-column justify-content-center">
+            <div class="row gy-4 block">
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
-  
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-  
+              <div class="col-xl-3 d-flex align-items-stretch container">
+                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="300">
+                  <h3>We are a team of highly-trained, female advisers</h3>
+                  <p>We won’t judge you or tell you what to do; we are here to listen.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-3 d-flex align-items-stretch container">
+                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="400">
+                  <h3>We will empower you</h3>
+                  <p>We will empower you to understand your options and support you to make any decisions about the
+                    future.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-3 d-flex align-items-stretch container">
+                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="500">
+                  <h3>We can support you to increase your safety</h3>
+                  <p>We can help you find a refuge place, or other specialist services.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-3 d-flex align-items-stretch container">
+                <div class="icon-box d-flex-col" data-aos="zoom-out" data-aos-delay="500">
+                  <h3>We can talk in confidence</h3>
+                  <p>We can talk in confidence, in many different languages, 24-hours a day, 365 days a year, for as
+                    long
+                    as you need.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- <div id="footer_placeholder"></div> -->
+
+  <footer id="footer" class="footer light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <!-- About Us Section -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">DV Survivors</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Your Adderess</p>
+            <p>xyz location</p>
+            <p class="mt-3"><strong>Telephone: </strong> <span>01223 607990</span></p>
+            <p class="mt-3"><strong>Whatsapp Business Number: </strong> <span>07923175219</span></p>
+            <p><strong>Email:</strong> <span>katie@dvsurvivors.co.uk</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About me</a></li>
+            <li><a href="area_of_support.html">Areas Of Support</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy_policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Contact Us</h4>
+          <p>
+            National Domestic Abuse Helpline<br>
+            123 Support Lane<br>
+            City, State, ZIP Code<br>
+          </p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Follow Us</h4>
+          <ul class="social-media">
+            <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p></p>
+    </div>
+  </footer>
+
+  <!-- Feedback Modal -->
+  <div class="card light-background" id="card">
+    <div class="heading">
+      <h1 class="modal-title">Give feedback</h1>
+      <p>What do you think of this ui design?</p>
+      <ul class="icon">
+        <li data-value="1" onclick="selectRating(this)"><i class="far fa-sad-tear fa-lg"></i></li>
+        <li data-value="2" onclick="selectRating(this)"><i class="far fa-frown fa-lg"></i></li>
+        <li data-value="3" onclick="selectRating(this)"><i class="far fa-meh fa-lg"></i></li>
+        <li data-value="4" onclick="selectRating(this)"><i class="far fa-smile fa-lg"></i></li>
+        <li data-value="5" onclick="selectRating(this)"><i class="far fa-grin-tears fa-lg"></i></li>
+      </ul>
+    </div>
+
+    <div class="textarea">
+      <label for="email">Email</label>
+      <input type="email" id="feedback_email" placeholder="email">
+    </div>
+
+    <div class="textarea">
+      <label for="textarea">Do you have any thoughts you'd like to share?</label>
+      <input type="textarea" id="feedback" placeholder="Type your words here..">
+    </div>
+
+    <div class="button">
+      <button class="cancel-btn modal-button-close">Cancel</butto>
+        <button class="modal-button" onclick="submitFeedback()">Send Feedback</button>
+    </div>
+    <button onclick="closeModal()" class="close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <!-- Whatsapp Message Modal -->
+  <div class="modal fade" tabindex="-1" id="whatsappMessageModel">
+    <div class="modal-dialog">
+      <div class="modal-content light-background">
+        <div class="modal-header">
+          <h5 class="modal-title">Send a WhatsApp Message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-button bg-golden" onclick="sendMessage()">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="whatsappMessageModel()" class="chat_button ">
+    <i id="chatOpen" class="bi bi-whatsapp white"></i>
+  </button>
+
+
+  <div id="chatbar" class="chat_box animated fadeInUp">
+    <div class="chat_box_header">
+    </div>
+    <div id="chatBody" class="chat_box_body">
+      <div class="modal-dialog">
+        <div class="modal-content light-background">
+          <div class="modal-header">
+            <h5 class="modal-title">Send a WhatsApp Message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <p class="mb-2">Please ensure you have WhatsApp installed on your device.</p>
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text" placeholder="Write some message here"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modal-button" onclick="sendMessage()">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chat_box_footer">
+
+      <input type="text" id="MsgInput" placeholder="Enter Message">
+      <button onclick="send()"><i class="fab fa-telegram-plane"></i></button>
+    </div>
+  </div>
+  </div>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    // setTimeout(function () {
+    //   whatsappMessageModel();
+    // }, 3000);
+  </script>
+
 </body>
+
 </html>

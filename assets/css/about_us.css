@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #181510;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-title h1:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+  }
+  
+  .section-title h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+
+.support-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.support-item {
+    background-color: #1e1e1e;
+    border: 1px solid 0px 2px 15px ;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.support-item:hover {
+    transform: translateY(-5px);
+}
+
+.support-item i {
+    font-size: 3em;
+    color: #E9DBBD;
+    margin-bottom: 10px;
+}
+
+.support-item h2 {
+    font-size: 1.5em;
+    color: #CBB682;
+    margin-bottom: 10px;
+}
+
+.support-item p {
+    color: #E9DBBD;
+}
+
+.contact-us {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-us p {
+    font-size: 1.2em;
+    color: #CBB682;
+}
+
+.contact-us a {
+    color: #E9DBBD;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
