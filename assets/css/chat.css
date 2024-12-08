@@ -1,0 +1,192 @@
+.chat_button {
+    position: fixed; /* Changed to fixed to ensure visibility */
+    bottom: 30px; /* Adjusted margin to be consistent */
+    right: 30px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    border-radius: 50%;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.chat_button:hover {
+    border: 2px solid;
+    background-color:black ;
+    color: #eff;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.chat_button:focus,
+.chat_button:active {
+    outline: none;
+}
+
+.chat_box {
+    max-height: 100%;
+    max-width: 100%;
+    height: 500px;
+    width: 350px;
+    background-color: #fff;
+    position: fixed; /* Changed to fixed to ensure visibility */
+    bottom: 100px;
+    right: 30px; /* Adjusted margin to be consistent */
+    display: none;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    border-radius: 15px;
+    background-image: url(https://i.pinimg.com/originals/40/39/e0/4039e0f1ef08b7b965bacb4641a7af49.jpg);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .45);
+}
+
+.chat_box_header {
+    padding: 20px;
+    background: #e1e3e8;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    color: #77e;
+    font-weight: 600;
+    letter-spacing: .25rem;
+}
+
+.chat_box_body {
+    padding: 16px;
+    height: 380px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.chat_box_body_self {
+    padding: 16px 15px;
+    float: right;
+    border-radius: 25px;
+    margin-right: 10px;
+    background: #5a5eb9;
+    color: white;
+    margin: 10px 0;
+    max-width: 75%;
+}
+
+.chat_box_body_other {
+    background: whitesmoke;
+    padding: 16px 15px;
+    color: #666;
+    max-width: 75%;
+    float: left;
+    margin-left: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+}
+
+.chat_box_body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f5f5f5;
+}
+
+.chat_box_body::-webkit-scrollbar-thumb {
+    background-color: #77e;
+}
+
+.chat_box_footer {
+    max-width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0; /* Corrected position */
+}
+
+.chat_box_footer input {
+    max-width: 100%;
+    width: 270px;
+    padding: 17px 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    background-color: #eee;
+}
+
+.chat_box_footer input:focus {
+    outline: none;
+}
+
+.chat_box_footer input::placeholder {
+    font-family: Nunito;
+}
+
+.chat_box_footer button {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.4rem;
+    background: white;
+    border: none;
+    border-bottom-right-radius: 16px;
+    color: #5a5eb9;
+    padding: 12px 15px;
+    left: 300px;
+}
+
+.chat_box_footer button:focus {
+    outline: none;
+}
+
+.toggle {
+    display: block;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 10%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.brand {
+    text-align: center !important;
+    margin-top: 25px;
+}
+
+.brand a {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 420px) {
+    .chat_box_footer input {
+        width: 100%;
+    }
+
+    .chat_box_footer button {
+        width: 30%;
+        right: 0;
+    }
+}
+
+
+#message-text{
+    height: 200px;
+}
